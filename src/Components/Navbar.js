@@ -11,18 +11,13 @@ const Navbar = () => {
         height={18}
         alt="search"
       />
-      <input className={style.minput} type="text" placeholder="Search artists" />
+      <input
+        className={style.minput}
+        type="text"
+        placeholder="Search artists"
+      />
     </div>
   );
 };
 
 export default Navbar;
-
-//    <Image
-//               src="/vercel.svg"
-//               alt="Vercel Logo"
-//               className="dark:invert"
-//               width={100}
-//               height={24}
-//               priority
-//             />
