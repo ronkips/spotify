@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../styles/modules/css';
+import style from '../styles/module/css';
 import Navbar from '../Navbar';
 
 const Album = () => {
