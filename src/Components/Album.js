@@ -1,13 +1,16 @@
 import React from 'react';
-import style from '../styles/module/css';
-import Navbar from '../Navbar';
+import style from "../styles/Home.module.css";
+import Navbar from './Navbar';
+import Sidebar from './Sidebar';
+
 
 const Album = () => {
   return (
     <div className={style.container}>
-    <div className={style.album}>
       <Navbar />
-    </div>  
+{/* <Sidebar/> */}
+    {/* <div className={style.album}> */}
+    {/* </div>   */}
     </div>
   )
 }
