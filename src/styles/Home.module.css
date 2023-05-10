@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  background: black;
+}
+.home {
+  position: relative;
+  left: 50px;
+  width: 1280px;
+  height: 750px;
+  top: 5px;
+
+  background: #1d2123;
+}
+
+.nav {
+  position: absolute;
+  width: 1122px;
+  height: 73px;
+  left: 96px;
+  top: 0px;
+  border-radius: 5px;
+
+  background: rgb(73, 70, 70);
+}
+.minput {
+  position: absolute;
+  width: max-content;
+  height: 25px;
+  top: 25px;
+  outline: none;
+  left: 65px;
+  padding-left: 9px;
+  background-color: inherit;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.25);
+
+  /* Inside auto layout */
+
+  /* flex: none;
+  order: 1;
+  flex-grow: 0; */
+}
+.search {
+  position: absolute;
+  left: 39px;
+  top: 30px;
+  color: rgba(255, 255, 255, 0.25);
+}
