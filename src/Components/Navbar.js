@@ -11,7 +11,7 @@ const Navbar = () => {
         height={18}
         alt="search"
       />
-      <input className={style.minput} type="text" placeholder="Search items" />
+      <input className={style.minput} type="text" placeholder="Search artists" />
     </div>
   );
 };

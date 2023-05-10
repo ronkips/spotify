@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import style from '../styles/Home.module.css';
+import Navbar from './Navbar';
 
 const Collections = () => {
   return (
-    <div>
-      <h1>Hello collections</h1>
+    <div className={style.container}>
+    <div className={style.collections}>
+      <Navbar />
+    </div>
     </div>
   )
 }
