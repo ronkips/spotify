@@ -1,8 +1,9 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import App from "@/Components/App";
 
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <App />
+    </div>
+  );
 }
