@@ -2,7 +2,9 @@ import React from 'react'
 
 const Collections = () => {
   return (
-    <div>Collections</div>
+    <div>
+      <h1>Hello collections</h1>
+    </div>
   )
 }
 
