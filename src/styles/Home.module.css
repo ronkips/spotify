@@ -123,3 +123,94 @@
   /* padding-top: 7px; */
   /* background: #c4c0c0; */
 }
+.hcontainer {
+  position: absolute;
+  width: 686px;
+  height: 373px;
+  left: 96px;
+  top: 96px;
+
+  background: #609eaf;
+  border-radius: 40px;
+}
+.hhead {
+  position: absolute;
+  width: 92px;
+  height: 14px;
+  left: 45px;
+  top: 38px;
+
+  /* Regular/12px */
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  /* or 14px */
+
+  color: #ffffff;
+}
+.hhead2 {
+  position: absolute;
+  width: 167px;
+  height: 42px;
+  left: 45px;
+  top: 137px;
+  /* Bold/35px */
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 120%;
+  /* identical to box height, or 42px */
+
+  color: #ffffff;
+}
+.htitle {
+  position: absolute;
+  width: 276px;
+  height: 51px;
+  left: 45px;
+  top: 185px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  /* or 17px */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.hlikes {
+  position: absolute;
+  width: 59px;
+  height: 17px;
+  left: 153px;
+  top: 313px;
+  /* Regular/14px */
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
+
+  color: #ffffff;
+}
+.esma {
+  position: absolute;
+  /* width: 380.67px; */
+  /* height: 571px; */
+  left: 343px;
+  top: 2px;
+
+}
