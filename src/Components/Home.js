@@ -26,6 +26,51 @@ const Home = () => {
           />
           <div className={style.hlikes}>Likes</div>
         </div>
+        <div className={style.htitle2}>Top charts</div>
+        <div className={style.hcontainer3}>
+          <div className={style.hmusic}>
+            <Image
+              className={style.rectangle17}
+              src="/rec.png"
+              width={63}
+              height={63}
+              alt="home"
+            />
+            <span className={style.rectitle}>Golden age of 80s</span>
+            <span className={style.recname}>Sean swadder</span>
+            <div className={style.rectime}>2:34:45</div>
+            <div className={style.reccircle}>
+              <Image
+                className={style.stroke}
+                src="/stroke.svg"
+                width={15}
+                height={14}
+                alt="love"
+              />
+            </div>
+          </div>
+          <div className={style.hmusic}>
+            <Image
+              className={style.rectangle17}
+              src="/rec.png"
+              width={63}
+              height={63}
+              alt="home"
+            />
+            <span className={style.rectitle}>Golden age of 80s</span>
+            <span className={style.recname}>Sean swadder</span>
+            <div className={style.rectime}>2:34:45</div>
+            <div className={style.reccircle}>
+              <Image
+                className={style.stroke}
+                src="/stroke.svg"
+                width={15}
+                height={14}
+                alt="love"
+              />
+            </div>
+          </div>
+        </div>
         {/* <Footer /> */}
       </div>
     </div>

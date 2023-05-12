@@ -212,5 +212,134 @@
   /* height: 571px; */
   left: 343px;
   top: 2px;
+}
+.htitle2 {
+  position: absolute;
+  width: 123px;
+  height: 29px;
+  left: 800px;
+  top: 96px;
 
+  /* Bold/24px */
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+
+  /* light */
+
+  color: #efeee0;
+}
+.hcontainer3 {
+  position: absolute;
+  width: 430px;
+  height: 356px;
+  left: 800px;
+  top: 139px;
+  overflow: hidden;
+  background: inherit;
+}
+.hmusic {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 417px;
+  height: 96px;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  top: 0px;
+  margin-top: 20px;
+  background: #1a1e1f;
+  border-radius: 20px;
+}
+.hmusicin {
+  position: absolute;
+  width: 63px;
+  height: 63px;
+  left: 17px;
+  top: 17px;
+
+  /* background: url(), #d9d9d9; */
+  border-radius: 10px;
+}
+.rectangle17 {
+  position: absolute;
+  left: 17px;
+  top: 17px;
+
+  border-radius: 10px;
+}
+.rectitle {
+  position: absolute;
+  width: 144px;
+  height: 20px;
+  left: 94px;
+  top: 17px;
+
+  /* Regular/17px */
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 120%;
+  /* or 20px */
+
+  color: #ffffff;
+}
+.recname {
+  position: absolute;
+  width: 79px;
+  height: 14px;
+  left: 94px;
+  top: 41px;
+
+  /* Regular/12px */
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  /* or 14px */
+
+  color: rgba(255, 255, 255, 0.5);
+}
+.rectime {
+  position: absolute;
+  width: 37px;
+  height: 14px;
+  left: 94px;
+  top: 63px;
+
+  /* Regular/12px */
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  /* or 14px */
+
+  color: #ffffff;
+}
+.reccircle {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  left: 359px;
+  top: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+}
+.stroke {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
