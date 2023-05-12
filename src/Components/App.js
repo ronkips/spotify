@@ -5,7 +5,7 @@ import Album from "./Album";
 const App = () => {
   return (
     <div>
-      {/* <Home /> */}
+      <Home />
       <Collections />
       
       
