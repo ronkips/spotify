@@ -24,7 +24,7 @@ const Home = () => {
             height={521}
             alt="home"
           />
-          <div className={style.hlikes}>Likes</div>
+          <div className={style.hlikes}>300 Likes</div>
         </div>
         <div className={style.htitle2}>Top charts</div>
         <div className={style.hcontainer3}>
@@ -70,6 +70,14 @@ const Home = () => {
               />
             </div>
           </div>
+        </div>
+        <div className={style.htitle3}>New releases.</div>
+        <div className={style.hcategory}>
+          <div className={style.hcategoryin}></div>
+          <div className={style.hcategoryin}></div>
+          <div className={style.hcategoryin}></div>
+          <div className={style.hcategoryin}></div>
+          <div className={style.hcategoryin}></div>
         </div>
         {/* <Footer /> */}
       </div>
