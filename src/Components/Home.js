@@ -73,11 +73,69 @@ const Home = () => {
         </div>
         <div className={style.htitle3}>New releases.</div>
         <div className={style.hcategory}>
-          <div className={style.hcategoryin}></div>
-          <div className={style.hcategoryin}></div>
-          <div className={style.hcategoryin}></div>
-          <div className={style.hcategoryin}></div>
-          <div className={style.hcategoryin}></div>
+          <div className={style.hcategoryin}>
+            <Image
+              src="/Rectangle1.png"
+              alt="music pic"
+              width={153}
+              height={153}
+            />
+            <span className={style.hcategoryintitle}>Life in a bubble</span>
+          </div>
+          <div className={style.hcategoryin}>
+            <Image
+              src="/Rectangle1.png"
+              alt="music pic"
+              width={153}
+              height={153}
+            />
+            <span className={style.hcategoryintitle}>Life in a bubble</span>
+          </div>
+          <div className={style.hcategoryin}>
+            <Image
+              src="/Rectangle1.png"
+              alt="music pic"
+              width={153}
+              height={153}
+            />
+            <span className={style.hcategoryintitle}>Life in a bubble</span>
+          </div>
+          <div className={style.hcategoryin}>
+            <Image
+              src="/Rectangle1.png"
+              alt="music pic"
+              width={153}
+              height={153}
+            />
+            <span className={style.hcategoryintitle}>Life in a bubble</span>
+          </div>
+          <div className={style.hcategoryin}>
+            <Image
+              src="/Rectangle1.png"
+              alt="music pic"
+              width={153}
+              height={153}
+            />
+            <span className={style.hcategoryintitle}>Life in a bubble</span>
+          </div>
+          <div className={style.hcategoryin}>
+            <Image
+              src="/Rectangle1.png"
+              alt="music pic"
+              width={153}
+              height={153}
+            />
+            <span className={style.hcategoryintitle}>Life in a bubble</span>
+          </div>
+          <div className={style.hcategoryin}>
+            <Image
+              src="/Rectangle1.png"
+              alt="music pic"
+              width={153}
+              height={153}
+            />
+            <span className={style.hcategoryintitle}>Life in a bubble</span>
+          </div>
         </div>
         {/* <Footer /> */}
       </div>
