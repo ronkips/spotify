@@ -371,26 +371,36 @@
 .hcategory {
   position: absolute;
   display: flex;
-  width: 900px;
-  height: 153px;
-  left: 96px;
-  top: 554px;
+  width: 1100px;
+  height: 163px;
+  left: 56px;
+  top: 544px;
 
-  background: red;
+  background: inherit;
   border-radius: 25px;
 }
 .hcategoryin {
   position: relative;
-  /* display: grid; */
-  /* grid-template-rows: repeat(1, 5fr); */
-
-  /* transform: translateY(-50%);
-  transform: translateX(-50%); */
-  top: 0px;
+  left: 0px;
+  top: 10px;
   margin-left: 30px;
-  width: 153px;
-  height: 153px;
+  width: 128px;
+  height: 128px;
 
-  background: black;
+  /* background: black; */
   border-radius: 25px;
+}
+.hcategoryintitle {
+  position: absolute;
+  margin-top: 3px;
+  padding-left: 3px;
+  width: 85px;
+  height: 15px;
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
 }
