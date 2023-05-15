@@ -193,8 +193,8 @@
   position: absolute;
   width: 59px;
   height: 17px;
-  left: 153px;
-  top: 313px;
+  left: 99px;
+  top: 0px;
   /* Regular/14px */
 
   font-family: 'Quicksand';
@@ -205,6 +205,13 @@
   /* identical to box height, or 17px */
 
   color: #ffffff;
+}
+.heartlike {
+  position: absolute;
+  left: 76.33px;
+  top: 3.67px;
+  cursor: pointer;
+  /* background: #ffffff; */
 }
 .esma {
   position: absolute;
@@ -239,7 +246,6 @@
   height: 356px;
   left: 800px;
   top: 139px;
-  overflow: hidden;
   background: inherit;
 }
 .hmusic {
@@ -309,6 +315,14 @@
 
   color: rgba(255, 255, 255, 0.5);
 }
+.vector {
+  position: absolute;
+  left: 280px;
+  right: -62.63%;
+  top: 42px;
+
+  transform: rotate(-6.5deg);
+}
 .rectime {
   position: absolute;
   width: 37px;
@@ -343,3 +357,92 @@
   left: 10px;
   top: 10px;
 }
+.ge {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.htitle3 {
+  position: absolute;
+  width: 160px;
+  height: 29px;
+  left: 96px;
+  top: 512px;
+
+  /* Bold/24px */
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+
+  /* light */
+
+  color: #efeee0;
+}
+.hcategory {
+  position: absolute;
+  display: flex;
+  width: 1000px;
+  height: 163px;
+  left: 56px;
+  top: 544px;
+
+  background: inherit;
+  border-radius: 25px;
+}
+.hcategoryin {
+  position: relative;
+  left: 0px;
+  top: 10px;
+  margin-left: 30px;
+  width: 128px;
+  height: 128px;
+
+  /* background: black; */
+  border-radius: 25px;
+}
+.hcategoryintitle {
+  position: absolute;
+  margin-top: 3px;
+  padding-left: 3px;
+  width: 85px;
+  height: 15px;
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+}
+.likescontainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* padding: 0px; */
+  background: inherit;
+  width: 158px;
+  top: 312px;
+  left: 54px;
+  height: 20px;
+}
+.phot {
+  position: absolute;
+  display: flex;
+  z-index: 9;
+  left: 0px;
+}
+/* .phot img {
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  border: 1px solid white;
+  opacity: 0.8;
+} */
+/* .phot img:not(:nth-child(1)) {
+  margin-left: -0.6rem;
+} */
