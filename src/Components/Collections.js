@@ -39,10 +39,11 @@ const Collections = () => {
       
       <Navbar />
     
-      <MyCollectionButton /> {/* Add MyCollectionButton component here */}
+      <MyCollectionButton />
+       {/* Add MyCollectionButton component here */}
         <Sidebar />
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

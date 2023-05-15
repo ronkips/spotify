@@ -5,8 +5,8 @@ import Home from "./Home";
 const App = () => {
   return (
     <div>
-      {/* <Home /> */}
-      <Album />
+      <Home />
+      {/* <Album /> */}
       {/* <Collections /> */}
     </div>
   );
