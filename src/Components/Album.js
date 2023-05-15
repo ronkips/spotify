@@ -3,8 +3,54 @@ import style from "../styles/Album.module.css";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Image from "next/image";
+import pic from "../../public/music.svg";
+import icon from "../../public/Heart.png";
+import menu from "../../public/icon.svg";
 
 const Album = () => {
+  const albums = [
+    {
+      image: pic,
+      icon: icon,
+      title: "Closa ~ Ybee ",
+      time: "4:17",
+      genre: "Obi datti",
+      menu: menu
+    },
+    {
+      image: pic,
+      time: "4:17",
+      icon: icon,
+      title: "Closa ~ Ybee ",
+      genre: "Obi datti",
+      menu: menu
+    },
+    {
+      image: pic,
+      time: "4:17",
+      icon: icon,
+      title: "Closa ~ Ybee ",
+      genre: "Obi datti",
+      menu: menu
+    },
+    {
+      image: pic,
+      time: "4:17",
+      icon: icon,
+      title: "Closa ~ Ybee ",
+      genre: "Obi datti",
+      menu: menu
+    },
+    {
+      image: pic,
+      time: "4:17",
+      icon: icon,
+      title: "Closa ~ Ybee ",
+      genre: "Obi datti",
+      menu: menu
+    }
+  ];
+
   return (
     <div className={style.container}>
       <div className={style.album}>
@@ -58,10 +104,69 @@ const Album = () => {
         </div>
         {/* music sectiom */}
         <div className={style.music_container}>
-          <div className={style.music_inside}></div>
-          <div className={style.music_inside}></div>
-          <div className={style.music_inside}></div>
-          <div className={style.music_inside}></div>
+          {/* <div className={style.music_inside}> */}
+          {albums.map((item, index) => {
+            return (
+              <div className={style.music_inside} key={index}>
+                <div className={style.inside}>
+                  <Image
+                    className={style.inside1}
+                    src={item.image}
+                    alt="music"
+                    width={13.33}
+                    height={13.33}
+                  />
+                  <Image
+                    className={style.inside2}
+                    src={item.icon}
+                    alt="music"
+                    width={13.33}
+                    height={13.33}
+                  />
+                  <span className={style.inside3}>{item.title}</span>
+                  <span className={style.inside4}>{item.genre}</span>
+                  <span className={style.inside5}>{item.time}</span>
+                  <Image
+                    // className={style.inside_icon}
+                    src={item.menu}
+                    alt="music"
+                    width={13.33}
+                    height={13.33}
+                  />
+                </div>
+              </div>
+            );
+          })}
+          {/* <div className={style.inside}> */}
+          {/* <Image
+                className={style.inside1}
+                src="/music.svg"
+                alt="music"
+                width={13.33}
+                height={13.33}
+              />
+              <Image
+                className={style.inside2}
+                src="/Heart.png"
+                alt="music"
+                width={13.33}
+                height={13.33}
+              />
+              <span className={style.inside3}>Let me love you ~ Krisx</span>
+              <span className={style.inside4}>Single</span>
+              <span className={style.inside5}>4:17</span>
+              <Image
+                className={style.inside_icon}
+                src="/icon.svg"
+                alt="music"
+                width={13.33}
+                height={13.33}
+              /> */}
+          {/* </div> */}
+          {/* </div> */}
+          {/* <div className={style.music_inside}></div> */}
+          {/* <div className={style.music_inside}></div> */}
+          {/* <div className={style.music_inside}></div> */}
         </div>
       </div>
     </div>
