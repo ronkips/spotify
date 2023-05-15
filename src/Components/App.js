@@ -1,11 +1,11 @@
 import React from "react";
-// import Album from "./Album";
-import Home from "./Home";
+import Album from "./Album";
+// import Home from "./Home";
 const App = () => {
   return (
     <div>
-      <Home />
-      {/* <Album /> */}
+      {/* <Home /> */}
+      <Album />
     </div>
   );
 };
