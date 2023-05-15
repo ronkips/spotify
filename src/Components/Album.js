@@ -56,6 +56,13 @@ const Album = () => {
             </button>
           </div>
         </div>
+        {/* music sectiom */}
+        <div className={style.music_container}>
+          <div className={style.music_inside}></div>
+          <div className={style.music_inside}></div>
+          <div className={style.music_inside}></div>
+          <div className={style.music_inside}></div>
+        </div>
       </div>
     </div>
   );
