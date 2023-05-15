@@ -203,3 +203,64 @@
 
   border-radius: 15px;
 }
+/* inside music_inside */
+.inside {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0px;
+}
+.inside1 {
+  position: relative;
+  left: 19px;
+}
+.inside2 {
+  margin-left: 10px;
+}
+.inside3 {
+  width: 128px;
+  height: 14px;
+  margin-left: 82.24px;
+  /* Regular/12px */
+  color: #ffffff;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+}
+.inside4 {
+  width: 128px;
+  height: 14px;
+  margin-left: 152px;
+  /* Regular/12px */
+  color: #ffffff;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+}
+.inside5 {
+  width: 20px;
+  height: 14px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  margin-left: 146px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  /* or 14px */
+
+  color: #ffffff;
+
+  /* Regular/12px */
+}
+.inside_icon {
+  margin-left: 150px;
+}
