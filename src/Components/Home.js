@@ -3,14 +3,61 @@ import style from "../styles/Home.module.css";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Image from "next/image";
+import { mousewheel } from "swiper";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+// import "./Testimonial.css";
 // import Footer from "./Footer";
 const Home = () => {
+  const items = [
+    {
+      pic: "/rk.png",
+      title: "latest song"
+    },
+    {
+      pic: "/rk.png",
+      title: "latest song"
+    },
+    {
+      pic: "/rk.png",
+      title: "latest song"
+    },
+    {
+      pic: "/rk.png",
+      title: "latest song"
+    },
+    {
+      pic: "/rk.png",
+      title: "latest song"
+    },
+    {
+      pic: "/Rectangle1.png",
+      title: "latest song"
+    },
+    {
+      pic: "/Rectangle1.png",
+      title: "latest song"
+    }
+  ];
   return (
     <div className={style.container}>
       <div className={style.home}>
         <Navbar />
         <Sidebar />
         <div className={style.hcontainer}>
+          <Image
+            className={style.vector}
+            src="/Vector.svg"
+            width={420}
+            height={200}
+            alt="vector"
+          />
           <div className={style.hhead}>Currated playlist</div>
           <div className={style.hhead2}>R & B Hits</div>
           <div className={style.htitle}>
@@ -73,13 +120,37 @@ const Home = () => {
         </div>
         <div className={style.htitle3}>New releases.</div>
         <div className={style.hcategory}>
-          <div className={style.hcategoryin}>
-            <Image
-              src="/Rectangle1.png"
-              alt="music pic"
-              width={153}
-              height={153}
-            />
+          <Swiper
+            // modules={[Pagination]}
+            slidesPerView={6}
+            spaceBetween={30}
+            mousewheel={true}
+            // pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+          >
+            {items.map((item, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <div className={style.hcategoryin}>
+                    <Image
+                      src={item.pic}
+                      alt="music pic"
+                      width={153}
+                      height={153}
+                    />
+                    <span className={style.hcategoryintitle}>
+                      Life in a bubble
+                    </span>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+          {/* {items.map((item) => 
+          <div className={}
+          )} */}
+          {/* <div className={style.hcategoryin}>
+            <Image src="/rk.png" alt="music pic" width={153} height={153} />
             <span className={style.hcategoryintitle}>Life in a bubble</span>
           </div>
           <div className={style.hcategoryin}>
@@ -135,7 +206,7 @@ const Home = () => {
               height={153}
             />
             <span className={style.hcategoryintitle}>Life in a bubble</span>
-          </div>
+          </div> */}
         </div>
         {/* <Footer /> */}
       </div>

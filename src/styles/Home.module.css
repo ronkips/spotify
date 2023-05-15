@@ -309,6 +309,14 @@
 
   color: rgba(255, 255, 255, 0.5);
 }
+.vector {
+  position: absolute;
+  left: 280px;
+  right: -62.63%;
+  top: 42px;
+
+  transform: rotate(-6.5deg);
+}
 .rectime {
   position: absolute;
   width: 37px;
@@ -371,7 +379,7 @@
 .hcategory {
   position: absolute;
   display: flex;
-  width: 1100px;
+  width: 1000px;
   height: 163px;
   left: 56px;
   top: 544px;
