@@ -4,6 +4,14 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import MyCollectionButton from "./MyCollectionButton";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { Mousewheel } from "swiper";
 
 
 const Collections = () => {
@@ -31,10 +39,11 @@ const Collections = () => {
       
       <Navbar />
     
-      <MyCollectionButton /> {/* Add MyCollectionButton component here */}
+      <MyCollectionButton />
+       {/* Add MyCollectionButton component here */}
         <Sidebar />
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
