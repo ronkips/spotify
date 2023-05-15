@@ -1,14 +1,13 @@
 import React from "react";
-// import Album from "./Album";
-import Home from "./Home";
-import Collections from "./Collections";
 import Album from "./Album";
+import Collections from "./Collections"
+// import Home from "./Home";
 const App = () => {
   return (
     <div>
-      <Home />
+      {/* <Home /> */}
+      <Album />
       {/* <Collections /> */}
-      {/* <Album /> */}
     </div>
   );
 };

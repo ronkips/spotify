@@ -11,5 +11,10 @@
   width: 1280px;
   height: 100vh;
 
-  background: #1d2123;
+  background: linear-gradient(180deg, rgba(29, 33, 35, 0.8) 0%, #1d2123 61.48%);
+}
+.background {
+  position: absolute;
+  background: url('/public/background.png');
+  left: 0px;
 }
