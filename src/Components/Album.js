@@ -52,7 +52,7 @@ const Album = () => {
   ];
 
   return (
-    <div className={style.container}>
+    <div className={style.container} id="album">
       <div className={style.album}>
         <Image
           className={style.background}
