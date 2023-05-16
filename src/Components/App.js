@@ -8,8 +8,8 @@ const App = () => {
     <div>
       {/* <Card /> */}
       {/* <Home /> */}
-      <Album />
-      {/* <Collections /> */}
+      {/* <Album /> */}
+      <Collections />
     </div>
   );
 };

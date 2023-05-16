@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import MyCollectionButton from "./MyCollectionButton";
+import likesButton from "@/Likesbutton";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -12,36 +13,77 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Mousewheel } from "swiper";
+import Image from "next/image";
 
 
 const Collections = () => {
   const items = [
     {
-      pic: "/Rectangle26.png",
+      pic: "/Rectangle 26.svg",
       title: "John watts"
     },
     {
-      pic: "/Rectangle27.png",
+      pic: "/Rectangle 27.svg",
       title: "John Watts"
     },
     {
-      pic: "/Rectangle28.png",
+      pic: "/Rectangle 28.svg",
+      title: "John Watts"
+    },  {
+      pic: "/Rectangle 28.svg",
+      title: "John Watts"
+    },  {
+      pic: "/Rectangle 28.svg",
       title: "John Watts"
     },
     {
-      pic: "/Rectangle29.png",
-      title: "John"
+      pic: "/Rectangle 28.svg",
+      title: "John Watts"
+    },
+    {
+      pic: "/Rectangle 29.svg",
+      title: "John Wattts"
     }
   ]
+  
   return (
     <div className={style.container}>
       <div className={style.Collections}>
       
       <Navbar />
+      <Sidebar />
+      <div className={style.cbutton}>My collection</div>
+      <div className={style.lbutton}>Likes</div>
+      <div className={style.ccontainer}>
+      <Swiper
+modules={[Mousewheel]}
+slidesPerView={4}
+spaceBetween={30}
+mousewheel={true}
+direction={"horizontal"}
+// scrollbar={{ draggable: true }}
+>
+{items.map((item, index) => {
+  return (
+    <SwiperSlide key={index}>
+      <div className={style.containeritems}>
+        <Image
+          src={item.pic}
+          alt="music pic"
+          width={213}
+          height={254}
+        />
+        {/* <span className={style.hcategoryintitle}>{item.title}</span> */}
+      </div>
+    </SwiperSlide>
+  );
+})}
+</Swiper>
+</div>
     
-      <MyCollectionButton />
+      {/* <MyCollectionButton /> */}
        {/* Add MyCollectionButton component here */}
-        <Sidebar />
+        {/* <Sidebar /> */}
 
         {/* <Footer /> */}
       </div>

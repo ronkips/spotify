@@ -1,20 +1,129 @@
 .container {
-    position: relative;
-    width: 1280px;
-    height: 832px;
-    align-items: center;
-    background: #23231d;
-  }
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  background: black;
+}
+.Collections {
+  position: relative;
+  left: 50px;
+  width: 1280px;
+  height: 100vh;
 
-  .Collections {
-    position: relative;
-    left: 50px;
-    width: 1280px;
-    height: 100vh;
+  background: #1d2123;
+}
+.cbutton{
+position: absolute;
+justify-content: center;
+align-items: center;
+padding: 10px;
+width: 120px;
+height: 37px;
+left: 96px;
+top: 96px;
+
+
+
+
+/* Regular/14px */
+
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+/* identical to box height, or 17px */
+
+
+/* dark */
+
+color: #1D2123;
+/* secondary */
+
+background: #FACD66;
+border-radius: 27px;
+}
   
-    background: #1d2123;
-  }
+.lbutton{
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  width: 84px;
+height: 37px;
+left: 230px;
+top:96px;
+opacity: 0.25;
+padding: 10px;
+/* light */
+
+border: 1px solid #EFEEE0;
+
+
+/* Regular/14px */
+
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+/* identical to box height, or 17px */
+
+text-align: center;
+
+/* light */
+
+color: #EFEEE0;
+border-radius: 27px;
+}
+.ccontainer{
+  display: flex;
   
+box-sizing: border-box;
+
+position: absolute;
+width: 900px;
+height: 234px;
+left: 96px;
+top: 156px;
+background: inherit;
+}
+.containeritems{
+  box-sizing: border-box;
+  display: flex;
+flex-direction: row;
+position: relative;
+margin-right: 23px;
+gap:44px;
+width: 213px;
+height: 259px;
+/* left: 0px; */
+top: 0px;
+
+
+/* border: 1px solid rgba(255, 255, 255, 0.03); */
+border-radius: 20px;
+}
+.containertitle{
+  width: 65px;
+height: 29px;
+top: 170px;
+left: 19px;
+/* Regular/24px */
+
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+
+text-align: center;
+
+/* light */
+
+color: #EFEEE0;
+}
   .nav {
     position: absolute;
     width: 1122px;
@@ -35,7 +144,10 @@
   }
 
   .MyCollectionButton {
-    display: flex;
+/* Auto layout */
+position: absolute;
+
+display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
@@ -52,6 +164,23 @@ top: 96px;
 
 background: #FACD66;
 border-radius: 27px;
+  }
+
+  .LikesButton{
+    position:absolute;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    gap:10px;
+
+    width:120px;
+    height:37px;
+    left:96px;
+    top:96px;
+    background:red;
+    
   }
   
   .minput {
