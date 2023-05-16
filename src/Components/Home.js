@@ -14,7 +14,7 @@ import "swiper/css/scrollbar";
 import { Mousewheel } from "swiper";
 // import "./Testimonial.css";
 // import Footer from "./Footer";
-const Home1 = () => {
+const Home = () => {
   const items = [
     {
       pic: "/rk.png",
@@ -175,4 +175,4 @@ const Home1 = () => {
   );
 };
 
-export default Home1;
+export default Home;
