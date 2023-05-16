@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../styles/Home.module.css";
+import style from "../../src/styles/Home.module.css";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Image from "next/image";
@@ -14,7 +14,7 @@ import "swiper/css/scrollbar";
 import { Mousewheel } from "swiper";
 // import "./Testimonial.css";
 // import Footer from "./Footer";
-const Home = () => {
+const Home1 = () => {
   const items = [
     {
       pic: "/rk.png",
@@ -50,7 +50,7 @@ const Home = () => {
     }
   ];
   return (
-    <div className={style.container}>
+    <div className={style.container} id="home">
       <div className={style.home}>
         <Navbar />
         <Sidebar />
@@ -83,7 +83,7 @@ const Home = () => {
               height={13}
               alt="home"
             />
-   
+
             <Image
               className={style.phot}
               src="/phot.png"
@@ -175,4 +175,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home1;
