@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 // import { styled, useTheme } from "@mui/material";
 // import { Box } from "@mui/material/Box";
 // import { Typography } from "@mui/material/Typography";
@@ -72,4 +72,4 @@ import React, { useState } from "react";
 //   return <Box sx={{ width: "100%", overflow: "hidden" }}></Box>;
 // };
 
-export default Footer;
+// export default Footer;
