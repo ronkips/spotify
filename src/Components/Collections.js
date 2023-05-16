@@ -1,15 +1,53 @@
-import React from 'react';
-import style from '../styles/Home.module.css';
-import Navbar from './Navbar';
+import React from "react";
+import style from "../styles/Collections.module.css";
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+import Footer from "./Footer";
+import MyCollectionButton from "./MyCollectionButton";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { Mousewheel } from "swiper";
+
 
 const Collections = () => {
+  const items = [
+    {
+      pic: "/Rectangle26.png",
+      title: "John watts"
+    },
+    {
+      pic: "/Rectangle27.png",
+      title: "John Watts"
+    },
+    {
+      pic: "/Rectangle28.png",
+      title: "John Watts"
+    },
+    {
+      pic: "/Rectangle29.png",
+      title: "John"
+    }
+  ]
   return (
     <div className={style.container}>
-    <div className={style.collections}>
+      <div className={style.Collections}>
+      
       <Navbar />
-    </div>
-    </div>
-  )
-}
+    
+      <MyCollectionButton />
+       {/* Add MyCollectionButton component here */}
+        <Sidebar />
 
-export default Collections
+        {/* <Footer /> */}
+      </div>
+    </div>
+  );
+};
+
+export default Collections;
+
