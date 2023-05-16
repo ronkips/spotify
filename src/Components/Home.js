@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../styles/Home.module.css";
+import style from "../../src/styles/Home.module.css";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Image from "next/image";
@@ -50,7 +50,7 @@ const Home = () => {
     }
   ];
   return (
-    <div className={style.container}>
+    <div className={style.container} id="home">
       <div className={style.home}>
         <Navbar />
         <Sidebar />
@@ -83,7 +83,7 @@ const Home = () => {
               height={13}
               alt="home"
             />
-   
+
             <Image
               className={style.phot}
               src="/phot.png"
