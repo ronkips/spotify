@@ -54,10 +54,11 @@ const Collections = () => {
         <div className={style.cbutton}>My collection</div>
         <div className={style.lbutton}>Likes</div>
         <div className={style.ccontainer}>
-          {items.map((item, index) => {
+          {/* {items.map((item, index) => {
             return (
               <div className={style.containeritems} key={index}>
                 <Image
+                  className={style.containerpic}
                   src={item.pic}
                   alt="music pic"
                   width={153}
@@ -67,18 +68,29 @@ const Collections = () => {
                 <span className={style.containersub_title}>hello world</span>
               </div>
             );
-          })}
-
-          {/* <div className={style.containeritems}>
+          })} */}
+          <div className={style.containeritems}>
             <Image
+              className={style.containerpic}
               src="/Rectangle 26.svg"
               alt="music pic"
               width={213}
-              height={254}
+              height={234}
             />
             <span className={style.containertitle}>hello world</span>
             <span className={style.containersub_title}>hello world</span>
-          </div> */}
+          </div>{" "}
+          <div className={style.containeritems}>
+            <Image
+              className={style.containerpic}
+              src="/Rectangle 26.svg"
+              alt="music pic"
+              width={213}
+              height={234}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
+          </div>
         </div>
 
         {/* <Footer /> */}

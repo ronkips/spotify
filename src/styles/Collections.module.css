@@ -76,24 +76,24 @@
   display: flex;
   flex-direction: row;
   width: 900px;
-  height: 234px;
+  height: 235px;
   left: 96px;
   top: 156px;
-  background: inherit;
+  background: red;
   border-radius: 25px;
 }
 .containeritems {
   position: relative;
   width: 213px;
-  height: 259px;
+  height: 234px;
+  margin-right: 20px;
   border-radius: 20px;
-  margin-right: 3px;
 }
 .containerpic {
   position: relative;
-  box-sizing: border-box;
   position: relative;
   border-radius: 20px;
+  margin-left: 10px;
 }
 .containertitle {
   position: relative;
