@@ -78,7 +78,27 @@ const Collections = () => {
             />
             <span className={style.containertitle}>hello world</span>
             <span className={style.containersub_title}>hello world</span>
-          </div> */}
+          </div>{" "}
+          <div className={style.containeritems}>
+            <Image
+              src="/Rectangle 26.svg"
+              alt="music pic"
+              width={213}
+              height={254}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
+          </div>{" "}
+          <div className={style.containeritems}>
+            <Image
+              src="/Rectangle 26.svg"
+              alt="music pic"
+              width={213}
+              height={254}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
+          </div>
         </div>
 
         {/* <Footer /> */}
