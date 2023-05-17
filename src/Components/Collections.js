@@ -15,65 +15,59 @@ import "swiper/css/scrollbar";
 import { Mousewheel } from "swiper";
 import Image from "next/image";
 
-
 const Collections = () => {
   const items = [
     {
       pic: "/Rectangle 26.svg",
       title: "John watts",
       subtitle: "Hello"
-
-    },
-    {
-      pic: "/Rectangle 27.svg",
-      title: "John Watts",
-      subtitle: "Hello"
-
-    },
+    }
+    // {
+    //   pic: "/Rectangle 27.svg",
+    //   title: "John Watts",
+    //   subtitle: "Hello"
+    // }
+    // // {
+    //   pic: "/Rectangle 28.svg",
+    //   title: "John Watts",
+    //   subtitle: "Hello"
+    // },
     // {
     //   pic: "/Rectangle 28.svg",
-    //   title: "John Watts",
-    //   subtitle: "Hello"
-
-    // }, {
-    //   pic: "/Rectangle 28.svg",
-    //   title: "John Watts",
-    // }, {
-    //   pic: "/Rectangle 28.svg",
-    //   title: "John Watts",
-    //   subtitle: "Hello"
-
+    //   title: "John Watts"
     // },
     // {
     //   pic: "/Rectangle 28.svg",
     //   title: "John Watts",
     //   subtitle: "Hello"
-
+    // },
+    // {
+    //   pic: "/Rectangle 28.svg",
+    //   title: "John Watts",
+    //   subtitle: "Hello"
     // },
     // {
     //   pic: "/Rectangle 29.svg",
     //   title: "John Wattts",
     //   subtitle: "Hello"
-
     // }
-  ]
+  ];
 
   return (
     <div className={style.container}>
       <div className={style.Collections}>
-
         <Navbar />
         <Sidebar />
         <div className={style.cbutton}>My collection</div>
         <div className={style.lbutton}>Likes</div>
         <div className={style.ccontainer}>
-          <div className={style.containeritems}>
-            <Swiper
-              modules={[Mousewheel]}
-              slidesPerView={4}
-              spaceBetween={30}
-              mousewheel={true}
-              direction={"horizontal"}
+          {
+           88/* /* <Swiper
+            modules={[Mousewheel]}
+            slidesPerView={7}
+            spaceBetween={50}
+            mousewheel={true}
+            direction={"horizontal"}
             // scrollbar={{ draggable: true }}
             >
               {items.map((item, index) => {
@@ -95,26 +89,49 @@ const Collections = () => {
                 );
               })}
             </Swiper>
+          </div> */ 
+          }
+         <div className={style.containeritems}>
+            <Image 
+              src="/Rectangle 26.svg"
+              alt="music pic"
+              width={213}
+              height={254}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
           </div>
           <div className={style.containeritems}>
-            <div classname={style.containerpic}>
-
-              <Image
-                src="/Rectangle 26.svg"
-                alt="music pic"
-                width={213}
-                height={254}
-              />
-              <span className={style.containertitle}>hello world</span>
-              <span className={style.containersub_title}>hello world</span>
-
-            </div>
+            <Image 
+              src="/Rectangle 27.svg"
+              alt="music pic"
+              width={213}
+              height={254}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
+          </div>
+          <div className={style.containeritems}>
+            <Image 
+              src="/Rectangle 28.svg"
+              alt="music pic"
+              width={213}
+              height={254}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
+          </div>
+          <div className={style.containeritems}>
+            <Image 
+              src="/Rectangle 29.svg"
+              alt="music pic"
+              width={213}
+              height={254}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
           </div>
         </div>
-
-        {/* <MyCollectionButton /> */}
-        {/* Add MyCollectionButton component here */}
-        {/* <Sidebar /> */}
 
         {/* <Footer /> */}
       </div>
@@ -123,4 +140,3 @@ const Collections = () => {
 };
 
 export default Collections;
-
