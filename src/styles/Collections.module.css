@@ -13,268 +13,297 @@
 
   background: #1d2123;
 }
-.cbutton{
-position: absolute;
-justify-content: center;
-align-items: center;
-padding: 10px;
-width: 120px;
-height: 37px;
-left: 96px;
-top: 96px;
-
-
-
-
-/* Regular/14px */
-
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 120%;
-/* identical to box height, or 17px */
-
-
-/* dark */
-
-color: #1D2123;
-/* secondary */
-
-background: #FACD66;
-border-radius: 27px;
-}
-  
-.lbutton{
+.cbutton {
+  position: absolute;
   justify-content: center;
   align-items: center;
-  position:absolute;
+  padding: 10px;
+  width: 120px;
+  height: 37px;
+  left: 96px;
+  top: 96px;
+
+  /* Regular/14px */
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
+
+  /* dark */
+
+  color: #1d2123;
+  /* secondary */
+
+  background: #facd66;
+  border-radius: 27px;
+}
+
+.lbutton {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   width: 84px;
-height: 37px;
-left: 230px;
-top:96px;
-opacity: 0.25;
-padding: 10px;
-/* light */
+  height: 37px;
+  left: 230px;
+  top: 96px;
+  opacity: 0.25;
+  padding: 10px;
+  /* light */
 
-border: 1px solid #EFEEE0;
+  border: 1px solid #efeee0;
 
+  /* Regular/14px */
 
-/* Regular/14px */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
 
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 120%;
-/* identical to box height, or 17px */
+  text-align: center;
 
-text-align: center;
+  /* light */
 
-/* light */
-
-color: #EFEEE0;
-border-radius: 27px;
+  color: #efeee0;
+  border-radius: 27px;
 }
-.ccontainer{
+.ccontainer {
   display: flex;
-  
-box-sizing: border-box;
 
-position: absolute;
-width: 900px;
-height: 234px;
-left: 96px;
-top: 156px;
-background: inherit;
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 900px;
+  height: 234px;
+  left: 96px;
+  top: 156px;
+  background: inherit;
 }
-.containeritems{
+.containeritems {
   box-sizing: border-box;
   display: flex;
-flex-direction: row;
-position: relative;
-margin-right: 23px;
-gap:44px;
-width: 213px;
-height: 259px;
-/* left: 0px; */
-top: 0px;
+  flex-direction: row;
+  position: relative;
+  margin-right: 23px;
+  gap: 44px;
+  width: 213px;
+  height: 259px;
+  /* left: 0px; */
+  top: 0px;
 
-
-/* border: 1px solid rgba(255, 255, 255, 0.03); */
-border-radius: 20px;
+  /* border: 1px solid rgba(255, 255, 255, 0.03); */
+  border-radius: 20px;
 }
-.containertitle{
+.containerpic {
+  box-sizing: border-box;
+  /* display: flex; */
+  /* flex-direction: row; */
+  position: relative;
+  margin-right: 23px;
+  gap: 44px;
+  width: 213px;
+  height: 259px;
+  /* left: 0px; */
+  top: 0px;
+
+  /* border: 1px solid rgba(255, 255, 255, 0.03); */
+  border-radius: 20px;
+}
+.containertitle {
+  position: relative;
   width: 65px;
-height: 29px;
-top: 170px;
-left: 19px;
-/* Regular/24px */
+  height: 29px;
+  top: -100px;
+  left: 29px;
+  /* Regular/24px */
 
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 120%;
-/* identical to box height, or 29px */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
 
-text-align: center;
+  /* light */
 
-/* light */
-
-color: #EFEEE0;
+  color: white;
 }
-  .nav {
-    position: absolute;
-    width: 1122px;
-    height: 73px;
-    left: 98px;
-    top: 0px;
-    border-radius: 5px;
-  
-    background: rgb(73, 70, 70);
-  }
+.containersub_title {
+  position: relative;
+  display: flex;
+  width: max-content;
+  height: 12px;
+  top: -90px;
+  left: 29px;
+  /* Regular/24px */
 
-  
-  .search {
-    position: absolute;
-    left: 39px;
-    top: 30px;
-    color: rgba(255, 255, 255, 0.25);
-  }
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 120%;
+  /* identical to box height, or 12px */
 
-  .MyCollectionButton {
-/* Auto layout */
-position: absolute;
+  text-align: center;
 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 10px;
+  /* light */
 
-position: absolute;
-width: 120px;
-height: 37px;
-left: 96px;
-top: 96px;
+  color: #efeee0;
 
-/* secondary */
+  opacity: 0.75;
+}
+.nav {
+  position: absolute;
+  width: 1122px;
+  height: 73px;
+  left: 98px;
+  top: 0px;
+  border-radius: 5px;
 
-background: #FACD66;
-border-radius: 27px;
-  }
+  background: rgb(73, 70, 70);
+}
 
-  .LikesButton{
-    position:absolute;
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-    padding:10px;
-    gap:10px;
+.search {
+  position: absolute;
+  left: 39px;
+  top: 30px;
+  color: rgba(255, 255, 255, 0.25);
+}
 
-    width:120px;
-    height:37px;
-    left:96px;
-    top:96px;
-    background:red;
-    
-  }
-  
-  .minput {
-    position: absolute;
-    width: max-content;
-    height: 25px;
-    top: 25px;
-    outline: none;
-    left: 65px;
-    padding-left: 9px;
-    background-color: inherit;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    /* identical to box height */
-  
-    color: rgba(255, 255, 255, 0.25);
-  }
-  
-  .sidebar {
-    left: 0px;
-    top: 0px;
-    height: 100vh;
-    width: 98px;
-    background-color: inherit;
-  }
-  .logo {
-    position: absolute;
-    width: 34px;
-    height: 34px;
-    left: 27px;
-    top: 23px;
-  }
-  .side_parent {
-    position: absolute;
-    width: 52px;
-    height: 230px;
-    left: 20px;
-    top: 96px;
-  
-    /* dark-alt */
-  
-    background: #090a0a;
-    border-radius: 32px;
-  }
-  .side_personal {
-    position: absolute;
-    width: 52px;
-    height: 127px;
-    left: 20px;
-    top: 346px;
-  
-    /* dark-alt */
-  
-    background: #090a0a;
-    border-radius: 32px;
-  }
-  .footer {
-    position: absolute;
-    width: inherit;
-    height: 125px;
-    /* left: -5px; */
-    /* top: 852px; */
-    bottom: 0px;
-    background-color: inherit;
-    filter: drop-shadow(0px -25px 100px rgba(16, 16, 16, 0.51));
-  }
-  .smenu {
-    position: absolute;
-    left: 38.27;
-    top: 26.83;
-    outline: none;
-    /* secondary */
-  
-    /* background: #facd66; */
-    justify-self: start;
-    /* navicon-active-shadow */
-  
-    /* box-shadow: 0px 0px 11px rgba(250, 205, 102, 0.25); */
-  }
-  .icon {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 22px;
-    height: 22px;
-    left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    top: 20px;
-    margin-top: 20px;
-    /* padding-top: 7px; */
-    /* background: #c4c0c0; */
-  }
-  
+.MyCollectionButton {
+  /* Auto layout */
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 120px;
+  height: 37px;
+  left: 96px;
+  top: 96px;
+
+  /* secondary */
+
+  background: #facd66;
+  border-radius: 27px;
+}
+
+.LikesButton {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 120px;
+  height: 37px;
+  left: 96px;
+  top: 96px;
+  background: red;
+}
+
+.minput {
+  position: absolute;
+  width: max-content;
+  height: 25px;
+  top: 25px;
+  outline: none;
+  left: 65px;
+  padding-left: 9px;
+  background-color: inherit;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.sidebar {
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 98px;
+  background-color: inherit;
+}
+.logo {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  left: 27px;
+  top: 23px;
+}
+.side_parent {
+  position: absolute;
+  width: 52px;
+  height: 230px;
+  left: 20px;
+  top: 96px;
+
+  /* dark-alt */
+
+  background: #090a0a;
+  border-radius: 32px;
+}
+.side_personal {
+  position: absolute;
+  width: 52px;
+  height: 127px;
+  left: 20px;
+  top: 346px;
+
+  /* dark-alt */
+
+  background: #090a0a;
+  border-radius: 32px;
+}
+.footer {
+  position: absolute;
+  width: inherit;
+  height: 125px;
+  /* left: -5px; */
+  /* top: 852px; */
+  bottom: 0px;
+  background-color: inherit;
+  filter: drop-shadow(0px -25px 100px rgba(16, 16, 16, 0.51));
+}
+.smenu {
+  position: absolute;
+  left: 38.27;
+  top: 26.83;
+  outline: none;
+  /* secondary */
+
+  /* background: #facd66; */
+  justify-self: start;
+  /* navicon-active-shadow */
+
+  /* box-shadow: 0px 0px 11px rgba(250, 205, 102, 0.25); */
+}
+.icon {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 22px;
+  height: 22px;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  top: 20px;
+  margin-top: 20px;
+  /* padding-top: 7px; */
+  /* background: #c4c0c0; */
+}
