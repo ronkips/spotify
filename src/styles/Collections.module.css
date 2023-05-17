@@ -74,6 +74,7 @@
 .ccontainer {
   position: absolute;
   display: flex;
+  flex-direction: row;
   width: 900px;
   height: 234px;
   left: 96px;
@@ -83,38 +84,30 @@
 }
 .containeritems {
   position: relative;
-  padding-left: 0px;
-  margin-right: 23px;
-  gap: 44px;
   width: 213px;
   height: 259px;
-
   border-radius: 20px;
+  margin-right: 3px;
 }
-/* .containerpic {
+.containerpic {
+  position: relative;
   box-sizing: border-box;
   position: relative;
-  margin-right: 23px;
-  gap: 44px;
-  width: 213px;
-  height: 259px;
-  top: 0px;
-
   border-radius: 20px;
-} */
+}
 .containertitle {
   position: relative;
   width: 65px;
   height: 29px;
-  top: -100px;
-  left: 29px;
+  top: -80px;
+  left: 19px;
   /* Regular/24px */
 
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 120%;
+  font-size: 20px;
+  line-height: 180%;
   /* identical to box height, or 29px */
 
   /* light */
@@ -126,8 +119,8 @@
   display: flex;
   width: max-content;
   height: 12px;
-  top: -90px;
-  left: 29px;
+  top: -80px;
+  left: 20px;
   /* Regular/24px */
 
   font-family: "Quicksand";
