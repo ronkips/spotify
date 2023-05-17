@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import MyCollectionButton from "./MyCollectionButton";
 import likesButton from "@/Likesbutton";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -46,11 +47,11 @@ const Collections = () => {
     //   title: "John Watts",
     //   subtitle: "Hello"
     // },
-    // {
-    //   pic: "/Rectangle 29.svg",
-    //   title: "John Wattts",
-    //   subtitle: "Hello"
-    // }
+    {
+      pic: "/Rectangle 29.svg",
+      title: "John Wattts",
+      subtitle: "Hello"
+    }
   ];
 
   return (
@@ -61,22 +62,32 @@ const Collections = () => {
         <div className={style.cbutton}>My collection</div>
         <div className={style.lbutton}>Likes</div>
         <div className={style.ccontainer}>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, Mousewheel]}
+            navigation
+            pagination
+            mousewheel
+            slidesPerView={4}
+            spaceBetween={1}
+            scrollbar={{ draggable: true }}
+          >
+            {items.map((item, index) => {
+              return (
+                <SwiperSlide key={index} className={style.containeritems}>
+                  <Image
+                    className={style.containerpic}
+                    src={item.pic}
+                    alt="music pic"
+                    width={213}
+                    height={254}
+                  />
+                  <span className={style.containertitle}>{item.title}</span>
+                  <span className={style.containersub_title}>hello world</span>
+                </SwiperSlide>
 
-          {items.map((item, index) => {
-            return (
-              <div className={style.containeritems} key={index}>
-                <Image
-                  className={style.containerpic}
-                  src={item.pic}
-                  alt="music pic"
-                  width={213}
-                  height={254}
-                />
-                <span className={style.containertitle}>{item.title}</span>
-                <span className={style.containersub_title}>hello world</span>
-              </div>
-            );
-          })}
+              );
+            })}
+          </Swiper>
           {/* <div className={style.containeritems}>
             <Image 
               src="/Rectangle 26.svg"
