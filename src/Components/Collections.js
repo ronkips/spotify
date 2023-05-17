@@ -4,7 +4,14 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import MyCollectionButton from "./MyCollectionButton";
+import likesButton from "@/Likesbutton";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import { Mousewheel } from "swiper";
 import Image from "next/image";
 
@@ -24,7 +31,7 @@ const Collections = () => {
       pic: "/Rectangle 28.svg",
       title: "John Watts",
       subtitle: "Hello"
-    }
+    },
     // {
     //   pic: "/Rectangle 28.svg",
     //   title: "John Watts"
@@ -54,20 +61,23 @@ const Collections = () => {
         <div className={style.cbutton}>My collection</div>
         <div className={style.lbutton}>Likes</div>
         <div className={style.ccontainer}>
+
           {/* {items.map((item, index) => {
+
             return (
               <div className={style.containeritems} key={index}>
                 <Image
                   className={style.containerpic}
                   src={item.pic}
                   alt="music pic"
-                  width={153}
-                  height={153}
+                  width={213}
+                  height={254}
                 />
                 <span className={style.containertitle}>{item.title}</span>
                 <span className={style.containersub_title}>hello world</span>
               </div>
             );
+
           })} */}
           <div className={style.containeritems}>
             <Image
@@ -83,6 +93,11 @@ const Collections = () => {
           <div className={style.containeritems}>
             <Image
               className={style.containerpic}
+
+          })}
+          {/* <div className={style.containeritems}>
+            <Image 
+
               src="/Rectangle 26.svg"
               alt="music pic"
               width={213}
@@ -91,6 +106,38 @@ const Collections = () => {
             <span className={style.containertitle}>hello world</span>
             <span className={style.containersub_title}>hello world</span>
           </div>
+
+          <div className={style.containeritems}>
+            <Image 
+              src="/Rectangle 27.svg"
+              alt="music pic"
+              width={213}
+              height={254}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
+          </div>
+          <div className={style.containeritems}>
+            <Image 
+              src="/Rectangle 28.svg"
+              alt="music pic"
+              width={213}
+              height={254}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
+          </div>
+          <div className={style.containeritems}>
+            <Image 
+              src="/Rectangle 29.svg"
+              alt="music pic"
+              width={213}
+              height={254}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
+          </div> */}
+
         </div>
 
         {/* <Footer /> */}
