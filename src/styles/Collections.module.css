@@ -75,11 +75,11 @@
   position: absolute;
   display: flex;
   flex-direction: row;
-  width: 900px;
+  width: 950px;
   height: 234px;
   left: 96px;
   top: 156px;
-  background: inherit;
+  background: red;
   border-radius: 25px;
 }
 .containeritems {
@@ -87,7 +87,7 @@
   width: 213px;
   height: 259px;
   border-radius: 20px;
-  margin-right: 3px;
+  margin-right: 20px;
 }
 .containerpic {
   position: relative;
