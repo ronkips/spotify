@@ -12,37 +12,18 @@ import FastRewindRounded from "@mui/icons-material/FastRewindRounded";
 import VolumeUpRounded from "@mui/icons-material/VolumeUpRounded";
 import VolumeDownRounded from "@mui/icons-material/VolumeDownRounded";
 import Image from "next/image";
+import { Grid } from "@mui/material";
 
 const WallPaper = styled("div")({
   position: "absolute",
   width: "100%",
-  height: "100%",
-  top: 0,
+  height: "125",
+  top: 722,
   left: 0,
   overflow: "hidden",
-  background: "linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%)",
-  transition: "all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s",
-  "&:before": {
-    content: '""',
-    width: "140%",
-    height: "140%",
-    position: "absolute",
-    top: "-40%",
-    right: "-50%",
-    background:
-      "radial-gradient(at center center, rgb(62, 79, 249) 0%, rgba(62, 79, 249, 0) 64%)"
-  },
-  "&:after": {
-    content: '""',
-    width: "140%",
-    height: "140%",
-    position: "absolute",
-    bottom: "-50%",
-    left: "-30%",
-    background:
-      "radial-gradient(at center center, rgb(247, 237, 225) 0%, rgba(247, 237, 225, 0) 70%)",
-    transform: "rotate(30deg)"
-  }
+  background: "#1E1E1E",
+  backdrop: "filter: blur(5px)"
+  /* Note: backdrop-filter has minimal browser support */
 });
 
 const Widget = styled("div")(({ theme }) => ({
@@ -54,7 +35,9 @@ const Widget = styled("div")(({ theme }) => ({
   position: "relative",
   zIndex: 1,
   backgroundColor:
-    theme.palette.mode === "dark" ? "rgba(0,0,0,0.6)" : "rgba(255,255,255,0.4)",
+    theme.palette.mode === "dark"
+      ? "rgba(51, 55, 59, 0.37)"
+      : "rgba(255,255,255,0.4)",
   backdropFilter: "blur(40px)"
 }));
 
@@ -93,68 +76,39 @@ export default function MusicPlayerSlider() {
   const lightIconColor =
     theme.palette.mode === "dark" ? "rgba(255,255,255,0.4)" : "rgba(0,0,0,0.4)";
   return (
-    <Box sx={{ width: "100%", overflow: "hidden" }}>
+    <Box sx={{ width: "90vw", overflow: "hidden" }}>
       <Widget>
-        <Box sx={{ display: "flex", alignItems: "center" }}>
-          <CoverImage>
-            <Image
-              alt="can't win - Chilling Sunday"
-              src="/background.png"
-              width={200}
-              height={200}
-            />
-          </CoverImage>
-          <Box sx={{ ml: 1.5, minWidth: 0 }}>
-            <Typography
-              variant="caption"
-              color="text.secondary"
-              fontWeight={500}
-            >
-              Jun Pulse
-            </Typography>
-            <Typography noWrap>
-              <b>คนเก่าเขาทำไว้ดี (Can&apos;t win)</b>
-            </Typography>
-            <Typography noWrap letterSpacing={-0.25}>
-              Chilling Sunday &mdash; คนเก่าเขาทำไว้ดี
-            </Typography>
-          </Box>
-        </Box>
-        <Slider
-          aria-label="time-indicator"
-          size="small"
-          value={position}
-          min={0}
-          step={1}
-          max={duration}
-          onChange={(_, value) => setPosition(value)}
-          sx={{
-            color: theme.palette.mode === "dark" ? "#fff" : "rgba(0,0,0,0.87)",
-            height: 4,
-            "& .MuiSlider-thumb": {
-              width: 8,
-              height: 8,
-              transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
-              "&:before": {
-                boxShadow: "0 2px 12px 0 rgba(0,0,0,0.4)"
-              },
-              "&:hover, &.Mui-focusVisible": {
-                boxShadow: `0px 0px 0px 8px ${
-                  theme.palette.mode === "dark"
-                    ? "rgb(255 255 255 / 16%)"
-                    : "rgb(0 0 0 / 16%)"
-                }`
-              },
-              "&.Mui-active": {
-                width: 20,
-                height: 20
-              }
-            },
-            "& .MuiSlider-rail": {
-              opacity: 0.28
-            }
-          }}
-        />
+        <Grid xs={3}>
+          <Grid item>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <CoverImage>
+                <Image
+                  alt="can't win - Chilling Sunday"
+                  src="/background.png"
+                  width={200}
+                  height={200}
+                />
+              </CoverImage>
+              <Box sx={{ ml: 1.5, minWidth: 0 }}>
+                <Typography
+                  variant="caption"
+                  color="text.secondary"
+                  fontWeight={500}
+                >
+                  Jun Pulse
+                </Typography>
+                <Typography noWrap>
+                  <b>คนเก่าเขาทำไว้ดี (Can&apos;t win)</b>
+                </Typography>
+                <Typography noWrap letterSpacing={-0.25}>
+                  Chilling Sunday &mdash; คนเก่าเขาทำไว้ดี
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
+
+     
         <Box
           sx={{
             display: "flex",

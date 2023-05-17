@@ -75,6 +75,7 @@
   position: absolute;
   display: flex;
   flex-direction: row;
+
   width: 950px;
   height: 234px;
   left: 96px;
@@ -85,15 +86,18 @@
 .containeritems {
   position: relative;
   width: 213px;
-  height: 259px;
-  border-radius: 20px;
+  height: 234px;
   margin-right: 20px;
+  border-radius: 20px;
+
+  margin-right: 20px;
+
 }
 .containerpic {
   position: relative;
-  box-sizing: border-box;
   position: relative;
   border-radius: 20px;
+  margin-left: 10px;
 }
 .containertitle {
   position: relative;

@@ -62,7 +62,8 @@ const Collections = () => {
         <div className={style.lbutton}>Likes</div>
         <div className={style.ccontainer}>
 
-          {items.map((item, index) => {
+          {/* {items.map((item, index) => {
+
             return (
               <div className={style.containeritems} key={index}>
                 <Image
@@ -76,17 +77,36 @@ const Collections = () => {
                 <span className={style.containersub_title}>hello world</span>
               </div>
             );
-          })}
-          {/* <div className={style.containeritems}>
-            <Image 
+
+          })} */}
+          <div className={style.containeritems}>
+            <Image
+              className={style.containerpic}
               src="/Rectangle 26.svg"
               alt="music pic"
               width={213}
-              height={254}
+              height={234}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
+          </div>{" "}
+          <div className={style.containeritems}>
+            <Image
+              className={style.containerpic}
+
+          })}
+          {/* <div className={style.containeritems}>
+            <Image 
+
+              src="/Rectangle 26.svg"
+              alt="music pic"
+              width={213}
+              height={234}
             />
             <span className={style.containertitle}>hello world</span>
             <span className={style.containersub_title}>hello world</span>
           </div>
+
           <div className={style.containeritems}>
             <Image 
               src="/Rectangle 27.svg"
@@ -117,6 +137,7 @@ const Collections = () => {
             <span className={style.containertitle}>hello world</span>
             <span className={style.containersub_title}>hello world</span>
           </div> */}
+
         </div>
 
         {/* <Footer /> */}
@@ -126,16 +147,3 @@ const Collections = () => {
 };
 
 export default Collections;
-
-
-          // <div className={style.containeritems}>
-          //   <Image
-          //     className={style.containerpic}
-          //     src="/Rectangle 26.svg"
-          //     alt="music pic"
-          //     width={213}
-          //     height={234}
-          //   />
-          //   <span className={style.containertitle}>hello world</span>
-          //   <span className={style.containersub_title}>hello world</span>
-          // </div
