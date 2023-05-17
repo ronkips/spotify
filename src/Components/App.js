@@ -5,6 +5,7 @@ import Home from "./Home";
 import Link from "next/link";
 import Card from "./Card";
 import Collections from "./Collections";
+import Footer from "./Footer";
 const App = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const App = () => {
       {/* <Home /> */}
       {/* <Album /> */}
       <Collections />
+      {/* <Footer /> */}
     </div>
   );
 };
