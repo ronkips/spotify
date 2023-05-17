@@ -67,7 +67,7 @@ const Collections = () => {
         <div className={style.cbutton}>My collection</div>
         <div className={style.lbutton}>Likes</div>
         <div className={style.ccontainer}>
-          {/* <div className={style.containeritems}>
+          <div className={style.containeritems}>
             <Swiper
               modules={[Mousewheel]}
               slidesPerView={4}
@@ -95,7 +95,7 @@ const Collections = () => {
                 );
               })}
             </Swiper>
-          </div> */}
+          </div>
           <div className={style.containeritems}>
             <div classname={style.containerpic}>
 
