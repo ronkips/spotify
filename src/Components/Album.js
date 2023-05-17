@@ -137,36 +137,6 @@ const Album = () => {
               </div>
             );
           })}
-          {/* <div className={style.inside}> */}
-          {/* <Image
-                className={style.inside1}
-                src="/music.svg"
-                alt="music"
-                width={13.33}
-                height={13.33}
-              />
-              <Image
-                className={style.inside2}
-                src="/Heart.png"
-                alt="music"
-                width={13.33}
-                height={13.33}
-              />
-              <span className={style.inside3}>Let me love you ~ Krisx</span>
-              <span className={style.inside4}>Single</span>
-              <span className={style.inside5}>4:17</span>
-              <Image
-                className={style.inside_icon}
-                src="/icon.svg"
-                alt="music"
-                width={13.33}
-                height={13.33}
-              /> */}
-          {/* </div> */}
-          {/* </div> */}
-          {/* <div className={style.music_inside}></div> */}
-          {/* <div className={style.music_inside}></div> */}
-          {/* <div className={style.music_inside}></div> */}
         </div>
       </div>
     </div>
