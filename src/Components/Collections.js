@@ -71,8 +71,9 @@ const Collections = () => {
             spaceBetween={1}
             scrollbar={{ draggable: true }}
           >
-            {items.map((item, index) => {
-              return (
+            {/* {items.map((item, index) => {
+  
+            return (
                 <SwiperSlide key={index} className={style.containeritems}>
                   <Image
                     className={style.containerpic}
@@ -86,18 +87,37 @@ const Collections = () => {
                 </SwiperSlide>
 
               );
-            })}
-          </Swiper>
-          {/* <div className={style.containeritems}>
-            <Image 
+  
+          })} */}
+          <div className={style.containeritems}>
+            <Image
+              className={style.containerpic}
               src="/Rectangle 26.svg"
               alt="music pic"
               width={213}
-              height={254}
+              height={234}
+            />
+            <span className={style.containertitle}>hello world</span>
+            <span className={style.containersub_title}>hello world</span>
+          </div>{" "}
+          <div className={style.containeritems}>
+            <Image
+              className={style.containerpic}
+
+          })}
+          </Swiper>
+          {/* <div className={style.containeritems}>
+            <Image 
+
+              src="/Rectangle 26.svg"
+              alt="music pic"
+              width={213}
+              height={234}
             />
             <span className={style.containertitle}>hello world</span>
             <span className={style.containersub_title}>hello world</span>
           </div>
+
           <div className={style.containeritems}>
             <Image 
               src="/Rectangle 27.svg"
@@ -128,6 +148,7 @@ const Collections = () => {
             <span className={style.containertitle}>hello world</span>
             <span className={style.containersub_title}>hello world</span>
           </div> */}
+
         </div>
 
         {/* <Footer /> */}
@@ -137,16 +158,3 @@ const Collections = () => {
 };
 
 export default Collections;
-
-
-          // <div className={style.containeritems}>
-          //   <Image
-          //     className={style.containerpic}
-          //     src="/Rectangle 26.svg"
-          //     alt="music pic"
-          //     width={213}
-          //     height={234}
-          //   />
-          //   <span className={style.containertitle}>hello world</span>
-          //   <span className={style.containersub_title}>hello world</span>
-          // </div

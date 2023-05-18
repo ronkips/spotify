@@ -18,35 +18,43 @@ const Home = () => {
   const items = [
     {
       pic: "/rk.png",
-      title: "bubble"
+      title: "bubble",
+      subtitle: "The Van"
     },
     {
       pic: "/rk.png",
-      title: "maintain"
+      title: "maintain",
+      subtitle: "The Van"
     },
     {
       pic: "/rk.png",
-      title: "latest song"
+      title: "latest song",
+      subtitle: "The Van"
     },
     {
       pic: "/rk.png",
-      title: "latest song"
+      title: "latest song",
+      subtitle: "Krisx"
     },
     {
       pic: "/rk.png",
-      title: "latest song"
+      title: "latest song",
+      subtitle: "The Van"
     },
     {
       pic: "/Rectangle1.png",
-      title: "latest song"
+      title: "latest song",
+      subtitle: "The Van"
     },
     {
       pic: "/Rectangle1.png",
-      title: "latest song"
+      title: "latest song",
+      subtitle: "The Van"
     },
     {
       pic: "/Rectangle1.png",
-      title: "sanze"
+      title: "sanze",
+      subtitle: "The Van"
     }
   ];
   return (
@@ -163,6 +171,39 @@ const Home = () => {
                       height={153}
                     />
                     <span className={style.hcategoryintitle}>{item.title}</span>
+                    <span className={style.hcategoryinsub_title}>
+                      {item.subtitle}
+                    </span>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
+        <div className={style.htitle4}>Popular in your area</div>
+        <div className={style.hcategory2}>
+          <Swiper
+            modules={[Mousewheel]}
+            slidesPerView={7}
+            spaceBetween={50}
+            mousewheel={true}
+            direction={"horizontal"}
+            // scrollbar={{ draggable: true }}
+          >
+            {items.map((item, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <div className={style.hcategoryin}>
+                    <Image
+                      src={item.pic}
+                      alt="music pic"
+                      width={153}
+                      height={153}
+                    />
+                    <span className={style.hcategoryintitle}>{item.title}</span>
+                    <span className={style.hcategoryinsub_title}>
+                      {item.subtitle}
+                    </span>
                   </div>
                 </SwiperSlide>
               );
