@@ -75,8 +75,9 @@
   position: absolute;
   display: flex;
   flex-direction: row;
-  width: 900px;
-  height: 235px;
+
+  width: 950px;
+  height: 234px;
   left: 96px;
   top: 156px;
   background: red;
@@ -88,6 +89,9 @@
   height: 234px;
   margin-right: 20px;
   border-radius: 20px;
+
+  margin-right: 20px;
+
 }
 .containerpic {
   position: relative;
