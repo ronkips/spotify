@@ -69,7 +69,7 @@ const Collections = () => {
             pagination={true}
             mousewheel
             slidesPerView={4}
-            spaceBetween={1}
+            spaceBetween={2}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             // scrollbar={{ draggable: true }}
