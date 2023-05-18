@@ -3,7 +3,7 @@ import style from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { FiMenu } from "@react-icons/all-files/fi/FiMenu";
+// import { FiMenu } from "@react-icons/all-files/fi/FiMenu";
 import Menu from "./Menu";
 import { useState, useEffect, useRef } from "react";
 
