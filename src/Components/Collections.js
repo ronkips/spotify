@@ -99,12 +99,8 @@ const Collections = () => {
             />
             <span className={style.containertitle}>hello world</span>
             <span className={style.containersub_title}>hello world</span>
-          </div>{" "}
-          <div className={style.containeritems}>
-            <Image
-              className={style.containerpic}
-
-          })}
+          </div>
+         
           </Swiper>
           {/* <div className={style.containeritems}>
             <Image 
