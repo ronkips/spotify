@@ -52,7 +52,7 @@ const Album = () => {
   ];
 
   return (
-    <div className={style.container} id="album">
+    <div className={style.container}>
       <div className={style.album}>
         <Image
           className={style.background}
@@ -127,7 +127,7 @@ const Album = () => {
                   <span className={style.inside4}>{item.genre}</span>
                   <span className={style.inside5}>{item.time}</span>
                   <Image
-                    // className={style.inside_icon}
+                    className={style.inside_icon}
                     src={item.menu}
                     alt="music"
                     width={13.33}
