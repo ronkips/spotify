@@ -3,8 +3,12 @@ import style from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { FiMenu } from "@react-icons/all-files/fi/FiMenu";
+import Menu from "./Menu";
+import { useState, useEffect, useRef } from "react";
 
 const Sidebar = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
   const router = useRouter();
 
   return (
@@ -16,15 +20,28 @@ const Sidebar = () => {
         height={18}
         alt="logo"
       />
+      {/* <div className={style.logo}>
+        {!isModalOpen ? (
+          <FiMenu
+            color="white"
+            onClick={() => {
+              setModalOpen(!isModalOpen);
+            }}
+          />
+        ) : (
+          ""
+        )}
+        <Menu Menu_modal={isModalOpen} closeMenu={() => setModalOpen(false)} />
+      </div> */}
 
       <div className={style.side_parent}>
-          <Image
-            className={style.icon}
-            src="/Hom.svg"
-            width={22}
-            height={22}
-            alt="home"
-          />
+        <Image
+          className={style.icon}
+          src="/Hom.svg"
+          width={22}
+          height={22}
+          alt="home"
+        />
         <Image
           className={style.icon}
           src="/playlist.svg"

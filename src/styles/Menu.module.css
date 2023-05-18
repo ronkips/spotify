@@ -1,0 +1,40 @@
+.menu_bar {
+  left: 23px;
+  top: 30px;
+}
+.Menu_container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 120%;
+  /* or 20px */
+
+  color: rgba(239, 238, 224, 0.25);
+  text-align: center;
+  cursor: pointer;
+
+  width: 340px;
+  height: 896px;
+
+  /* dark-alt */
+
+  background: red;
+}
+.Menu_Container.open {
+  display: block;
+}
+
+.Menu_Container.close {
+  display: none;
+}
+.closeIcon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
