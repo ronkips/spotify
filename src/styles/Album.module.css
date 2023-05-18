@@ -264,3 +264,24 @@
 .inside_icon {
   margin-left: 150px;
 }
+@media screen and (max-width: 414px) {
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background: black;
+  }
+  .album {
+    position: relative;
+    width: 414px;
+    height: 896px;
+
+    /* dark */
+
+    background: #1d2123;
+  }
+  .background {
+    display: none;
+  }
+}

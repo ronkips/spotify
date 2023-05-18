@@ -1,68 +1,16 @@
-import * as React from "react";
-import { styled, useTheme } from "@mui/material/styles";
+import React from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
 import Slider from "@mui/material/Slider";
-import IconButton from "@mui/material/IconButton";
-import Stack from "@mui/material/Stack";
-import PauseRounded from "@mui/icons-material/PauseRounded";
-import PlayArrowRounded from "@mui/icons-material/PlayArrowRounded";
-import FastForwardRounded from "@mui/icons-material/FastForwardRounded";
-import FastRewindRounded from "@mui/icons-material/FastRewindRounded";
-import VolumeUpRounded from "@mui/icons-material/VolumeUpRounded";
-import VolumeDownRounded from "@mui/icons-material/VolumeDownRounded";
+import { styled, useTheme } from "@mui/material/styles";
+import Paper from "@mui/material/Paper";
 import Image from "next/image";
-import { Grid } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import VolumeUpRounded from "@mui/icons-material/VolumeUpRounded";
 
-const WallPaper = styled("div")({
-  position: "absolute",
-  width: "100%",
-  height: "125",
-  top: 722,
-  left: 0,
-  overflow: "hidden",
-  background: "#1E1E1E",
-  backdrop: "filter: blur(5px)"
-  /* Note: backdrop-filter has minimal browser support */
-});
+import { Stack } from "@mui/material";
 
-const Widget = styled("div")(({ theme }) => ({
-  padding: 16,
-  borderRadius: 16,
-  width: 343,
-  maxWidth: "100%",
-  margin: "auto",
-  position: "relative",
-  zIndex: 1,
-  backgroundColor:
-    theme.palette.mode === "dark"
-      ? "rgba(51, 55, 59, 0.37)"
-      : "rgba(255,255,255,0.4)",
-  backdropFilter: "blur(40px)"
-}));
-
-const CoverImage = styled("div")({
-  width: 100,
-  height: 100,
-  objectFit: "cover",
-  overflow: "hidden",
-  flexShrink: 0,
-  borderRadius: 8,
-  backgroundColor: "rgba(0,0,0,0.08)",
-  "& > img": {
-    width: "100%"
-  }
-});
-
-const TinyText = styled(Typography)({
-  fontSize: "14",
-  opacity: 0.38,
-  fontWeight: 700,
-  fontSize: "14",
-  letterSpacing: 0.2
-});
-
-export default function MusicPlayerSlider() {
+const Footer = () => {
   const theme = useTheme();
   const duration = 200; // seconds
   const [position, setPosition] = React.useState(32);
@@ -75,89 +23,86 @@ export default function MusicPlayerSlider() {
   const mainIconColor = theme.palette.mode === "dark" ? "#fff" : "#000";
   const lightIconColor =
     theme.palette.mode === "dark" ? "rgba(255,255,255,0.4)" : "rgba(0,0,0,0.4)";
+
   return (
-    <Box sx={{ width: "90vw", overflow: "hidden" }}>
-      <Widget>
-        <Grid xs={3}>
-          <Grid item>
-            <Box sx={{ display: "flex", alignItems: "center" }}>
-              <CoverImage>
-                <Image
-                  alt="can't win - Chilling Sunday"
-                  src="/background.png"
-                  width={200}
-                  height={200}
-                />
-              </CoverImage>
-              <Box sx={{ ml: 1.5, minWidth: 0 }}>
-                <Typography
-                  variant="caption"
-                  color="text.secondary"
-                  fontWeight={500}
-                >
-                  Jun Pulse
-                </Typography>
-                <Typography noWrap>
-                  <b>คนเก่าเขาทำไว้ดี (Can&apos;t win)</b>
-                </Typography>
-                <Typography noWrap letterSpacing={-0.25}>
-                  Chilling Sunday &mdash; คนเก่าเขาทำไว้ดี
-                </Typography>
-              </Box>
-            </Box>
+    <Paper
+      sx={{
+        paddingTop: 2,
+        marginTop: 23,
+        marginLeft: 4,
+        maxWidth: 1300,
+        maxHeight: 140,
+        flexGrow: 1
+        // backgroundColor: "#"npm run
+      }}
+    >
+      <Grid container spacing={2}>
+        <Grid item>
+          <Box sx={{ width: 49, height: 49, padding: "10" }}>
+            <Image src="/face.svg" alt="album" width={49} height={49} />
+          </Box>
+        </Grid>
+        <Grid item xs={20} sm container>
+          <Grid item xs container direction="column" spacing={2}>
+            <Grid item sx>
+              <Typography variant="subtitle1" component="div">
+                Seasons in
+              </Typography>
+
+              <Typography variant="body2" color="text.secondary">
+                James
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
+        <Grid item xs={20} sm container>
+          <Grid item xs container direction="column" spacing={2}>
+            <Grid item sx={3}>
+              <Typography variant="body2" color="text.secondary">
+                James
+              </Typography>
+              <Slider
+                aria-label="time-indicator"
+                size="small"
+                value={position}
+                min={0}
+                step={1}
+                max={duration}
+                onChange={(_, value) => setPosition(value)}
+                sx={{
+                  color:
+                    theme.palette.mode === "dark" ? "#fff" : "rgba(0,0,0,0.87)",
+                  height: 4,
+                  "& .MuiSlider-thumb": {
+                    width: 8,
+                    height: 8,
+                    transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
+                    "&:before": {
+                      boxShadow: "0 2px 12px 0 rgba(0,0,0,0.4)"
+                    },
+                    "&:hover, &.Mui-focusVisible": {
+                      boxShadow: `0px 0px 0px 8px ${
+                        theme.palette.mode === "dark"
+                          ? "rgb(255 255 255 / 16%)"
+                          : "rgb(0 0 0 / 16%)"
+                      }`
+                    },
+                    "&.Mui-active": {
+                      width: 10,
+                      height: 10
+                    }
+                  },
+                  "& .MuiSlider-rail": {
+                    opacity: 0.28
+                  }
+                }}
+              />
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item>
+          <VolumeUpRounded htmlColor={lightIconColor} />
 
-     
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            mt: -2
-          }}
-        >
-          <TinyText>{formatDuration(position)}</TinyText>
-          <TinyText>-{formatDuration(duration - position)}</TinyText>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            mt: -1
-          }}
-        >
-          <IconButton aria-label="previous song">
-            <FastRewindRounded fontSize="large" htmlColor={mainIconColor} />
-          </IconButton>
-          <IconButton
-            aria-label={paused ? "play" : "pause"}
-            onClick={() => setPaused(!paused)}
-          >
-            {paused ? (
-              <PlayArrowRounded
-                sx={{ fontSize: "3rem" }}
-                htmlColor={mainIconColor}
-              />
-            ) : (
-              <PauseRounded
-                sx={{ fontSize: "3rem" }}
-                htmlColor={mainIconColor}
-              />
-            )}
-          </IconButton>
-          <IconButton aria-label="next song">
-            <FastForwardRounded fontSize="large" htmlColor={mainIconColor} />
-          </IconButton>
-        </Box>
-        <Stack
-          spacing={2}
-          direction="row"
-          sx={{ mb: 1, px: 1 }}
-          alignItems="center"
-        >
-          <VolumeDownRounded htmlColor={lightIconColor} />
           <Slider
             aria-label="Volume"
             defaultValue={30}
@@ -180,10 +125,10 @@ export default function MusicPlayerSlider() {
               }
             }}
           />
-          <VolumeUpRounded htmlColor={lightIconColor} />
-        </Stack>
-      </Widget>
-      <WallPaper />
-    </Box>
+        </Grid>
+      </Grid>
+    </Paper>
   );
-}
+};
+
+export default Footer;
