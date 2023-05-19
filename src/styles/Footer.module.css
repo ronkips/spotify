@@ -3,7 +3,7 @@
   width: 1292px;
   height: 125px;
   left: 25px;
-  top: 722px;
+  top: 622px;
 
   background: rgba(51, 55, 59, 0.37);
   backdrop-filter: blur(5px);
@@ -49,46 +49,153 @@
 
   color: rgba(255, 255, 255, 0.44);
 }
-.f_slider {
+/* volume container */
+.f_volumeContainer {
   position: absolute;
-  left: 270px;
-  right: 21.13%;
-  top: 65.6%;
-  bottom: 31.2%;
-
-  /* background: rgba(255, 255, 255, 0.04); */
-  background: #facd66;
-  border-radius: 50px;
-}
-.f_volume {
-  position: absolute;
-  left: 82.51%;
-  right: 5.11%;
-  top: 41.6%;
-  bottom: 56%;
+  height: 3px;
+  left: 1066px;
+  width: 160px;
+  top: 52px;
+  cursor: pointer;
 
   background: #facd66;
+  /* background: gray; */
   border-radius: 42px;
 }
+.volume_slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+/* end of volume */
 .f_volumebutton {
   position: absolute;
   width: 18px;
-  height: 18px;
+  /* height: 18px; */
   left: 1042px;
   top: 44px;
 }
 .button_container {
   position: absolute;
   display: flex;
-  left: 39.94%;
-  right: 40.17%;
-  top: 20%;
-  bottom: 59.56%;
-  /* background: red; */
+  left: 516px;
+  width: 250px;
+  top: 25px;
+  background: red;
 }
 .footer_icon {
   display: flex;
+  /* left: 632px; */
+  /* top: 25px; */
+
   width: 16px;
   height: 16px;
   margin-left: 20px;
 }
+.footerplay {
+  position: relative;
+  /* top: 15px; */
+  left: 632px;
+}
+/* slider */
+.f_slider {
+  --progress-bar-height: 4px;
+  --thumb-width: 20px;
+  --thumb-height: 20px;
+}
+.f_slider {
+  position: absolute;
+  height: 4px;
+  left: 270px;
+  width: 749px;
+  top: 65.6%;
+  /* bottom: 31.2%; */
+
+  background: rgba(255, 255, 255, 0.04);
+  /* background: #facd66; */
+  border-radius: 50px;
+}
+
+/* background */
+.f_slider::before {
+  content: '';
+  background-color: white;
+  width: 99%;
+  height: calc(var(--progress-bar-height) - 1px);
+  display: block;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+/* custom progress bar */
+.f_sliderCover {
+  background-color: rgb(218, 55, 145);
+  width: 0%;
+  height: var(--progress-bar-height);
+  display: block;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+}
+/* hide original */
+.range {
+  -webkit-appearance: none;
+  background-color: rgba(240, 9, 9, 0.397);
+  height: 10px;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+  margin: 0 auto;
+}
+.range::-webkit-slider-thumb {
+  width: var(--thumb-width);
+  height: var(--thumb-height);
+
+  background: #350f2d;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+/* timer */
+
+.timer1 {
+  position: absolute;
+  left: 275px;
+  top: 75.6%;
+  /* color: rgb(196, 196, 196); */
+}
+.timer2 {
+  position: absolute;
+  left: 975px;
+  top: 75.6%;
+}
+
+/* thumb */
+.thumb {
+  width: var(--thumb-width);
+  height: var(--thumb-height);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.753);
+  z-index: 3;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  pointer-events: none; /* Remove pointer events on thumb so user can click on the actual thumb beaneath it!  */
+  user-select: none; /*  Prevent Accidentally highlighting the number while sliding the cursor  */
+}
+
+
