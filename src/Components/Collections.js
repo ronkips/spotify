@@ -15,6 +15,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Mousewheel } from "swiper";
 import Image from "next/image";
+import { pagination } from "swiper";
 
 const Collections = () => {
   const items = [
@@ -33,20 +34,20 @@ const Collections = () => {
       title: "John Watts",
       subtitle: "Hello"
     },
-    // {
-    //   pic: "/Rectangle 28.svg",
-    //   title: "John Watts"
-    // },
-    // {
-    //   pic: "/Rectangle 28.svg",
-    //   title: "John Watts",
-    //   subtitle: "Hello"
-    // },
-    // {
-    //   pic: "/Rectangle 28.svg",
-    //   title: "John Watts",
-    //   subtitle: "Hello"
-    // },
+    {
+      pic: "/Rectangle 28.svg",
+      title: "John Watts"
+    },
+    {
+      pic: "/Rectangle 28.svg",
+      title: "John Watts",
+      subtitle: "Hello"
+    },
+    {
+      pic: "/Rectangle 28.svg",
+      title: "John Watts",
+      subtitle: "Hello"
+    },
     {
       pic: "/Rectangle 29.svg",
       title: "John Wattts",
@@ -64,14 +65,16 @@ const Collections = () => {
         <div className={style.ccontainer}>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, Mousewheel]}
-            navigation
-            pagination
+            // navigation
+            pagination={true}
             mousewheel
             slidesPerView={4}
-            spaceBetween={1}
-            scrollbar={{ draggable: true }}
+            spaceBetween={2}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            // scrollbar={{ draggable: true }}
           >
-            {/* {items.map((item, index) => {
+            {items.map((item, index) => {
   
             return (
                 <SwiperSlide key={index} className={style.containeritems}>
@@ -88,7 +91,7 @@ const Collections = () => {
 
               );
   
-          })} */}
+          })}
           <div className={style.containeritems}>
             <Image
               className={style.containerpic}
