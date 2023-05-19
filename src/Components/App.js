@@ -12,8 +12,8 @@ const App = () => {
       {/* <Card /> */}
       {/* <Home /> */}
       {/* <Album /> */}
-      <Collections />
-      {/* <Footer /> */}
+      {/* <Collections /> */}
+      <Footer />
     </div>
   );
 };
