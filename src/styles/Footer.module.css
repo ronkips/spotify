@@ -1,9 +1,9 @@
 .footer {
   position: absolute;
-  width: 1292px;
+  width: 1280px;
   height: 125px;
-  left: 25px;
-  top: 722px;
+  left: 50px;
+  top: 762px;
 
   background: rgba(51, 55, 59, 0.37);
   backdrop-filter: blur(5px);
@@ -175,11 +175,12 @@
   position: absolute;
   left: 275px;
   top: 75.6%;
-  /* color: rgb(196, 196, 196); */
+  color: rgb(196, 196, 196);
 }
 .timer2 {
   position: absolute;
   left: 975px;
+  color: rgb(196, 196, 196);
   top: 75.6%;
 }
 
