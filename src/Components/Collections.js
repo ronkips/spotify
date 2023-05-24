@@ -73,7 +73,7 @@ const Collections = () => {
             spaceBetween={2}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-          // scrollbar={{ draggable:    true }}
+          // scrollbar={{ draggable:true }}
           >
             {items.map((item, index) => {
 
