@@ -11,7 +11,7 @@ const App = () => {
     <div>
       {/* <Card /> */}
       {/* <Home /> */}
-      {/* <Album /> */}
+      <Album />
       {/* <Collections /> */}
       <Footer />
     </div>

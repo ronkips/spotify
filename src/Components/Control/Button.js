@@ -1,8 +1,6 @@
 import React from "react";
 import style from "../../styles/Footer.module.css";
-import { AiFillPlayCircle } from "react-icons/ai";
-import { AiOutlinePauseCircle } from "react-icons";
-import Play from "./Play";
+
 
 const Button = ({ play, isPlaying }) => {
   return (

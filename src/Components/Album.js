@@ -12,30 +12,30 @@ const Album = () => {
     {
       image: pic,
       icon: icon,
-      title: "Closa ~ Ybee ",
+      title: "Let me love you~ Krisx ",
       time: "4:17",
-      genre: "Obi datti",
+      genre: "Single",
+      menu: menu
+    },
+    {
+      image: pic,
+      time: "2:30",
+      icon: icon,
+      title: "Watin man go do~ Burna ",
+      genre: "African giant",
       menu: menu
     },
     {
       image: pic,
       time: "4:17",
       icon: icon,
-      title: "Closa ~ Ybee ",
+      title: "Stand strong ~ Davido ",
       genre: "Obi datti",
       menu: menu
     },
     {
       image: pic,
-      time: "4:17",
-      icon: icon,
-      title: "Closa ~ Ybee ",
-      genre: "Obi datti",
-      menu: menu
-    },
-    {
-      image: pic,
-      time: "4:17",
+      time: "2:02",
       icon: icon,
       title: "Closa ~ Ybee ",
       genre: "Obi datti",
