@@ -18,8 +18,8 @@ button {
 }
 /* ---------- */
 .btnContainer {
-  /* left: 516px; */
-  /* top: 25px; */
+  left: 516px;
+  top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
