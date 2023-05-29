@@ -198,5 +198,3 @@
   pointer-events: none; /* Remove pointer events on thumb so user can click on the actual thumb beaneath it!  */
   user-select: none; /*  Prevent Accidentally highlighting the number while sliding the cursor  */
 }
-
-
