@@ -35,20 +35,24 @@ const Sidebar = () => {
       </div> */}
 
       <div className={style.side_parent}>
-        <Image
-          className={style.icon}
-          src="/Hom.svg"
-          width={22}
-          height={22}
-          alt="home"
-        />
-        <Image
-          className={style.icon}
-          src="/playlist.svg"
-          width={18}
-          height={18}
-          alt="home"
-        />
+        <Link href={"/home"}>
+          <Image
+            className={style.icon}
+            src="/Hom.svg"
+            width={22}
+            height={22}
+            alt="home"
+          />
+        </Link>
+        <Link href={"/album"}>
+          <Image
+            className={style.icon}
+            src="/playlist.svg"
+            width={18}
+            height={18}
+            alt="home"
+          />
+        </Link>
 
         <Image
           className={style.icon}
@@ -57,13 +61,15 @@ const Sidebar = () => {
           height={18}
           alt="home"
         />
-        <Image
-          className={style.icon}
-          src="/video.png"
-          width={18}
-          height={18}
-          alt="home"
-        />
+        <Link href={"/collections"}>
+          <Image
+            className={style.icon}
+            src="/video.png"
+            width={18}
+            height={18}
+            alt="home"
+          />
+        </Link>
       </div>
       <div className={style.side_personal}>
         <Image
