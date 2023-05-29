@@ -67,7 +67,7 @@ const Collections = () => {
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, Mousewheel]}
             // navigation
-            pagination={true}
+            // pagination={true}
             mousewheel
             slidesPerView={4}
             spaceBetween={2}
