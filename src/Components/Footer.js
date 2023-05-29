@@ -1,12 +1,7 @@
 import React, { useState, useRef } from "react";
 import style from "../styles/Footer.module.css";
 import Image from "next/image";
-// import { BsFillVolumeUpFill } from "react-icons/bs";
-// import { AiFillStepForward } from "react-icons/ai";
-// import { AiFillStepBackward } from "react-icons/ai";
-// import { AiOutlinePauseCircle } from "react-icons";
-// import { AiFillPlayCircle } from "react-icons/ai";
-// import { RiRepeatOneFill } from "react-icons/ri";
+
 import Slider from "./Slider";
 import ControlPanel from "./Control/ControlPanel";
 import { Percent } from "@mui/icons-material";
