@@ -1,5 +1,7 @@
 import React from "react";
 import style from "../../styles/Footer.module.css";
+import VolumeUp from "@mui/icons-material/VolumeUp";
+
 
 
 const Button = ({ play, isPlaying }) => {

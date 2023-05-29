@@ -11,7 +11,7 @@
   width: 1280px;
   height: 100vh;
   left: 50px;
-  /* overflow: auto; */
+  overflow:visible;
   background: #1d2123;
 }
 

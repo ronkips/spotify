@@ -3,7 +3,6 @@ import style from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-// import { FiMenu } from "@react-icons/all-files/fi/FiMenu";
 import Menu from "./Menu";
 import { useState, useEffect, useRef } from "react";
 
@@ -20,19 +19,7 @@ const Sidebar = () => {
         height={18}
         alt="logo"
       />
-      {/* <div className={style.logo}>
-        {!isModalOpen ? (
-          <FiMenu
-            color="white"
-            onClick={() => {
-              setModalOpen(!isModalOpen);
-            }}
-          />
-        ) : (
-          ""
-        )}
-        <Menu Menu_modal={isModalOpen} closeMenu={() => setModalOpen(false)} />
-      </div> */}
+
 
       <div className={style.side_parent}>
         <Link href={"/home"}>
