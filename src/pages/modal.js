@@ -6,7 +6,7 @@ import Modal from "@mui/material/Modal";
 import styled from "@emotion/styled";
 
 const style = {
-  positio: "absolute",
+  position: "absolute",
   top: "50%",
   left: "50px",
   transform: "translate(-50%, -50%)",
