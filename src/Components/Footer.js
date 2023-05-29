@@ -4,9 +4,7 @@ import Image from "next/image";
 
 import Slider from "./Slider";
 import ControlPanel from "./Control/ControlPanel";
-import { Percent } from "@mui/icons-material";
-import Button from "./Control/Button";
-import Play from "./Control/Play";
+// import Play from "./Control/Play";
 import Volume from "./volume";
 const Footer = () => {
   const [percentage, setPercentage] = useState(0);
@@ -23,8 +21,8 @@ const Footer = () => {
     setPercentage(e.target.value);
   };
 
-  const play = (e) => {
-    const audio = useRef.current;
+  const play = () => {
+    const audio = audioRef.current;
     // audio.volume = 0.1;
 
     if (!isPlaying) {
