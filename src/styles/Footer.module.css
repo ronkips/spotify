@@ -206,9 +206,15 @@
   top: -25px;
   left: 632px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 40px;
+  width: 100px;
   height: 40px;
   flex-grow: 1;
+}
+.next {
+  position: relative;
+  top: 34px;
+  left: 700px;
+  width: 16px;
 }

@@ -34,6 +34,15 @@ const Footer = () => {
       audio.pause();
     }
   };
+  const forward = () => {
+    const audio = audioRef.current;
+    const newTime = audio.currentTime + 10; // Forward by 10 seconds
+    if (newTime < audio.duration) {
+      audio.currentTime = newTime;
+      setCurrentTime(newTime.toFixed(2));
+      setPercentage((newTime / audio.duration) * 100);
+    }
+  };
 
   const geCurrentDuration = (e) => {
     const percent = (
@@ -74,7 +83,17 @@ const Footer = () => {
         isPlaying={isPlaying}
         duration={duration}
         currentTime={currentTime}
+        forward={forward}
       />
+      {/* <ControlPanel
+        play={play}
+        isPlaying={isPlaying}
+        duration={duration}
+        currentTime={currentTime}
+      /> */}
+      {/* <div className={style.next}>
+        <Image src="/next.svg" width={16} height={16} alt="see you" />
+      </div> */}
       <div className={style.f_volumebutton}>
         <Volume />
       </div>
