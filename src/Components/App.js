@@ -4,9 +4,12 @@ import Layout from "./Layout";
 const App = () => {
   return (
     <div>
+
       <Layout>
         <Home />
       </Layout>
+
+
     </div>
   );
 };
