@@ -71,8 +71,8 @@ const Collections = () => {
             mousewheel
             slidesPerView={4}
             spaceBetween={2}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log("slide change")}
+            // onSwiper={(swiper) => console.log(swiper)}
             // scrollbar={{ draggable:true }}
           >
             {items.map((item, index) => {
@@ -90,7 +90,7 @@ const Collections = () => {
                 </SwiperSlide>
               );
             })}
-            <div className={style.containeritems}>
+            {/* <div className={style.containeritems}>
               <Image
                 className={style.containerpic}
                 src="/Rectangle 26.svg"
@@ -100,7 +100,7 @@ const Collections = () => {
               />
               <span className={style.containertitle}>hello world</span>
               <span className={style.containersub_title}>hello world</span>
-            </div>
+            </div> */}
           </Swiper>
         </div>
       </div>
