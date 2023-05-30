@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import MyCollectionButton from "./MyCollectionButton";
 import likesButton from "@/Likesbutton";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -67,16 +67,15 @@ const Collections = () => {
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, Mousewheel]}
             // navigation
-            pagination={true}
+            // pagination={true}
             mousewheel
             slidesPerView={4}
             spaceBetween={2}
-            onSlideChange={() => console.log('slide change')}
+            onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
-          // scrollbar={{ draggable:true }}
+            // scrollbar={{ draggable:true }}
           >
             {items.map((item, index) => {
-
               return (
                 <SwiperSlide key={index} className={style.containeritems}>
                   <Image
@@ -89,9 +88,7 @@ const Collections = () => {
                   <span className={style.containertitle}>{item.title}</span>
                   <span className={style.containersub_title}>John watts</span>
                 </SwiperSlide>
-
               );
-
             })}
             <div className={style.containeritems}>
               <Image
@@ -104,54 +101,8 @@ const Collections = () => {
               <span className={style.containertitle}>hello world</span>
               <span className={style.containersub_title}>hello world</span>
             </div>
-
           </Swiper>
-          {/* <div className={style.containeritems}>
-            <Image 
-
-              src="/Rectangle 26.svg"
-              alt="music pic"
-              width={213}
-              height={234}
-            />
-            <span className={style.containertitle}>hello world</span>
-            <span className={style.containersub_title}>hello world</span>
-          </div>
-
-          <div className={style.containeritems}>
-            <Image 
-              src="/Rectangle 27.svg"
-              alt="music pic"
-              width={213}
-              height={254}
-            />
-            <span className={style.containertitle}>hello world</span>
-            <span className={style.containersub_title}>hello world</span>
-          </div>
-          <div className={style.containeritems}>
-            <Image 
-              src="/Rectangle 28.svg"
-              alt="music pic"
-              width={213}
-              height={254}
-            />
-            <span className={style.containertitle}>hello world</span>
-            <span className={style.containersub_title}>hello world</span>
-          </div>
-          <div className={style.containeritems}>
-            <Image 
-              src="/Rectangle 29.svg"
-              alt="music pic"
-              width={213}
-              height={254}
-            />
-            <span className={style.containertitle}>hello world</span>
-            <span className={style.containersub_title}>hello world</span>
-          </div> */}
-
         </div>
-
-        {/* <Footer /> */}
       </div>
     </div>
   );
