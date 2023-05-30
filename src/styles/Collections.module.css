@@ -95,7 +95,7 @@
   border-radius: 20px;
 
   margin-right: 20px;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 .containeritems:hover {
@@ -112,7 +112,7 @@
   position: relative;
   border-radius: 20px;
   margin-left: 10px;
-  transition: 1s;
+  /* transition: 1s; */
 }
 
 .containertitle {

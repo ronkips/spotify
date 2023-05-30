@@ -44,6 +44,6 @@ button {
   border-right: 10px solid rgb(26, 24, 24);
   cursor: pointer;
 }
-
-
-
+.play {
+  cursor: pointer;
+}
