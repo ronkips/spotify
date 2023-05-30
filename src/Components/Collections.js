@@ -64,6 +64,7 @@ const Collections = () => {
         <div className={style.cbutton}>My collection</div>
         <div className={style.lbutton}>Likes</div>
         <div className={style.ccontainer}>
+
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, Mousewheel]}
             // navigation
@@ -103,6 +104,7 @@ const Collections = () => {
               />
               <span className={style.containertitle}>hello world</span>
               <span className={style.containersub_title}>hello world</span>
+             
             </div>
 
           </Swiper>
