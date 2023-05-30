@@ -12,7 +12,9 @@ const Button = ({ play, isPlaying }) => {
     <div className={style.btnContainer}>
       <CiShuffle />
       <AiFillStepBackward />
-      <div onClick={play} className={isPlaying ? "btn_stop" : "btn_play"} />
+      <div className="play" onClick={play}>
+        {isPlaying ? <AiFillPauseCircle /> : <AiFillPlayCircle />}{" "}
+      </div>
       <AiFillStepForward />
       <BsRepeat />
     </div>
