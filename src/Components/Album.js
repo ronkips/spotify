@@ -3,7 +3,7 @@ import style from "../styles/Album.module.css";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Image from "next/image";
-import pic from "../../public/music.svg";
+import pic from "../../public/face.svg";
 import icon from "../../public/Heart.png";
 import menu from "../../public/icon.svg";
 
@@ -113,8 +113,8 @@ const Album = () => {
                     className={style.inside1}
                     src={item.image}
                     alt="music"
-                    width={13.33}
-                    height={13.33}
+                    width={49}
+                    height={49}
                   />
                   <Image
                     className={style.inside2}
