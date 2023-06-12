@@ -11,7 +11,7 @@
   width: 1280px;
   height: 100vh;
   left: 50px;
-  overflow:visible;
+  overflow: visible;
   background: #1d2123;
 }
 
@@ -494,6 +494,11 @@
 /* .phot img:not(:nth-child(1)) {
   margin-left: -0.6rem;
 } */
+@media screen and (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 414px) {
   .home {
@@ -557,6 +562,9 @@
     display: none;
   }
   .hcategory2 {
+    display: none;
+  }
+  .side {
     display: none;
   }
 }
