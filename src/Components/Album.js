@@ -125,11 +125,11 @@ const Album = () => {
                     width={13.33}
                     height={13.33}
                   />
-                  <div className={style.inside0}>
+                  {/* <div className={style.inside0}> */}
                     <span className={style.inside3}>{item.title}</span>
                     <span className={style.inside4}>{item.genre}</span>
-                  </div>
-                  <div className={style.inside01}>
+                  {/* </div> */}
+                  {/* <div className={style.inside01}> */}
                     <span className={style.inside5}>{item.time}</span>
                     <Image
                       className={style.inside_icon}
@@ -138,7 +138,7 @@ const Album = () => {
                       width={13.33}
                       height={13.33}
                     />
-                  </div>
+                  {/* </div> */}
                 </div>
               </div>
             );
