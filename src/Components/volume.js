@@ -5,14 +5,16 @@ import Slider from "@mui/material/Slider";
 import VolumeUp from "@mui/icons-material/VolumeUp";
 
 export default function Volume() {
-  const [value, setValue] = useState(40);
+  const [value, setValue] = useState(50);
 
-  const volumeRef = useRef();
+  const volumeRef = useRef(null);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    const audio = volumeRef.current;
-    audio.Volume = newValue / 100;
+    const audio = audioRef.current;
+    if (audio) {
+      audio.volume = newValue / 100;
+    }
   };
 
   return (
@@ -23,11 +25,12 @@ export default function Volume() {
         <Slider
           aria-label="Volume"
           color="secondary"
-          value={value} mkuti
-          
+          value={value}
+
           onChange={handleChange}
         />
       </Stack>
+      {/* <audio ref={audioRef} src="/volume.js" /> */}
     </Box>
   );
 }
