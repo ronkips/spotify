@@ -22,7 +22,7 @@ const Album = () => {
       time: "2:30",
       icon: icon,
       title: "Watin man go do~ Burna ",
-      genre: "African giant",
+      genre: "single",
       menu: menu
     },
     {
@@ -30,7 +30,7 @@ const Album = () => {
       time: "4:17",
       icon: icon,
       title: "Stand strong ~ Davido ",
-      genre: "Obi datti",
+      genre: "single",
       menu: menu
     },
     {
@@ -46,7 +46,7 @@ const Album = () => {
       time: "4:17",
       icon: icon,
       title: "Closa ~ Ybee ",
-      genre: "Obi datti",
+      genre: "single",
       menu: menu
     }
   ];
@@ -109,13 +109,15 @@ const Album = () => {
             return (
               <div className={style.music_inside} key={index}>
                 <div className={style.inside}>
-                  <Image
-                    className={style.inside1}
-                    src={item.image}
-                    alt="music"
-                    width={49}
-                    height={49}
-                  />
+                  <div className={style.inside00}>
+                    <Image
+                      className={style.inside1}
+                      src={item.image}
+                      alt="music"
+                      width={49}
+                      height={49}
+                    />
+                  </div>
                   <Image
                     className={style.inside2}
                     src={item.icon}
@@ -123,16 +125,20 @@ const Album = () => {
                     width={13.33}
                     height={13.33}
                   />
-                  <span className={style.inside3}>{item.title}</span>
-                  <span className={style.inside4}>{item.genre}</span>
-                  <span className={style.inside5}>{item.time}</span>
-                  <Image
-                    className={style.inside_icon}
-                    src={item.menu}
-                    alt="music"
-                    width={13.33}
-                    height={13.33}
-                  />
+                  <div className={style.inside0}>
+                    <span className={style.inside3}>{item.title}</span>
+                    <span className={style.inside4}>{item.genre}</span>
+                  </div>
+                  <div className={style.inside01}>
+                    <span className={style.inside5}>{item.time}</span>
+                    <Image
+                      className={style.inside_icon}
+                      src={item.menu}
+                      alt="music"
+                      width={13.33}
+                      height={13.33}
+                    />
+                  </div>
                 </div>
               </div>
             );

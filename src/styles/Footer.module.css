@@ -218,3 +218,25 @@
   left: 700px;
   width: 16px;
 }
+@media screen and (max-width: 900px) {
+  .footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  .footer {
+    display: none;
+    /* box-sizing: border-box;
+
+    bottom: 0px;
+    right: 0px;
+    top: 89.86%;
+    width: 100vw;
+    height: 125px;
+
+    background: rgba(29, 33, 35, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px); */
+    /* Note: backdrop-filter has minimal browser support */
+  }
+}
