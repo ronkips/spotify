@@ -57,6 +57,37 @@ const Home = () => {
       subtitle: "The Van"
     }
   ];
+
+  const myItems = [
+    {
+      recPic: "/rec.png",
+      recTitle: "Golden age of 80s",
+      recName: "sean Swadder",
+      recTime: "2:34:45",
+      recCircle: "/stroke.svg"
+    },
+    {
+      recPic: "/rec.png",
+      recTitle: "Raggae n blue",
+      recName: "DJ YK",
+      recTime: "2:24:45",
+      recCircle: "/stroke.svg"
+    },
+    {
+      recPic: "/rec.png",
+      recTitle: "Tommorrow's tune",
+      recName: "Obi datti",
+      recTime: "2:04:45",
+      recCircle: "/stroke.svg"
+    },
+    {
+      recPic: "/rec.png",
+      recTitle: "Golden age of 80s",
+      recName: "sean Swadder",
+      recTime: "2:34:45",
+      recCircle: "/stroke.svg"
+    }
+  ];
   return (
     <div className={style.container} id="home">
       <div className={style.home}>
@@ -91,21 +122,45 @@ const Home = () => {
               height={13}
               alt="home"
             />
+            <div className={style.phot}>
+              <img src="/phot.png" alt="phot" />
+            </div>
 
-            <Image
-              className={style.phot}
-              src="/phot.png"
-              width={20}
-              height={20}
-              alt="phot"
-            />
             <div className={style.hlikes}>300 Likes</div>
           </div>
         </div>
         <div className={style.htitle2}>Top charts</div>
         <div className={style.hcontainer3}>
-          <div className={style.hmusic}>
-            <button>
+          {myItems.map((item, index) => {
+            return (
+              <div className={style.hmusic} key={index}>
+                <button>
+                  <Image
+                    className={style.rectangle17}
+                    src={item.recPic}
+                    width={63}
+                    height={63}
+                    alt="home"
+                  />
+                </button>
+
+                <span className={style.rectitle}>{item.recTitle}</span>
+                <span className={style.recname}>{item.recName}</span>
+                <div className={style.rectime}>{item.recTime}</div>
+                <div className={style.reccircle}>
+                  <Image
+                    className={style.stroke}
+                    src={item.recCircle}
+                    width={15}
+                    height={14}
+                    alt="love"
+                  />
+                </div>
+              </div>
+            );
+          })}
+
+          {/* <button>
               <Image
                 className={style.rectangle17}
                 src="/rec.png"
@@ -126,30 +181,9 @@ const Home = () => {
                 height={14}
                 alt="love"
               />
-            </div>
-          </div>
-          <div className={style.hmusic}>
-            <Image
-              className={style.rectangle17}
-              src="/rec.png"
-              width={63}
-              height={63}
-              alt="home"
-            />
-            <span className={style.rectitle}>Golden age of 80s</span>
-            <span className={style.recname}>Sean swadder</span>
-            <div className={style.rectime}>2:34:45</div>
-            <div className={style.reccircle}>
-              <Image
-                className={style.stroke}
-                src="/stroke.svg"
-                width={15}
-                height={14}
-                alt="love"
-              />
-            </div>
-          </div>
+            </div> */}
         </div>
+
         <div className={style.htitle3}>New releases.</div>
         <div className={style.hcategory}>
           <Swiper
