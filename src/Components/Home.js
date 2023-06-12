@@ -158,7 +158,7 @@ const Home = () => {
             spaceBetween={50}
             mousewheel={true}
             direction={"horizontal"}
-            // scrollbar={{ draggable: true }}
+          // scrollbar={{ draggable: true }}
           >
             {items.map((item, index) => {
               return (
@@ -188,7 +188,7 @@ const Home = () => {
             spaceBetween={50}
             mousewheel={true}
             direction={"horizontal"}
-            // scrollbar={{ draggable: true }}
+          // scrollbar={{ draggable: true }}
           >
             {items.map((item, index) => {
               return (
