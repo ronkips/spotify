@@ -14,6 +14,9 @@ import "swiper/css/scrollbar";
 import { Mousewheel } from "swiper";
 // import "./Testimonial.css";
 // import Footer from "./Footer";
+
+// import { motion } from "framer-motion";
+
 const Home = () => {
   const items = [
     {
@@ -88,6 +91,43 @@ const Home = () => {
       recCircle: "/stroke.svg"
     }
   ];
+
+  // const InfiniteAnimation = () => {
+  //   return (
+  //     <div style={{ overflow: "hidden" }}>
+  //       <motion.div
+  //         animate={{ x: "-100%" }}
+  //         transition={{
+  //           duration: 10,
+  //           ease: "linear",
+  //           repeat: Infinity,
+  //           repeatType: "loop",
+  //           repeatDelay: 0
+  //         }}
+  //       >
+  //         {items.map((item, index) => {
+  //           return (
+  //             <SwiperSlide key={index}>
+  //               <div className={style.hcategoryin}>
+  //                 <Image
+  //                   src={item.pic}
+  //                   alt="music pic"
+  //                   width={153}
+  //                   height={153}
+  //                 />
+  //                 <span className={style.hcategoryintitle}>{item.title}</span>
+  //                 <span className={style.hcategoryinsub_title}>
+  //                   {item.subtitle}
+  //                 </span>
+  //               </div>
+  //             </SwiperSlide>
+  //           );
+  //         })}
+  //       </motion.div>
+  //     </div>
+  //   );
+  // };
+
   return (
     <div className={style.container} id="home">
       <div className={style.home}>
@@ -159,29 +199,6 @@ const Home = () => {
               </div>
             );
           })}
-
-          {/* <button>
-              <Image
-                className={style.rectangle17}
-                src="/rec.png"
-                width={63}
-                height={63}
-                alt="home"
-              />
-            </button>
-
-            <span className={style.rectitle}>Golden age of 80s</span>
-            <span className={style.recname}>Sean swadder</span>
-            <div className={style.rectime}>2:34:45</div>
-            <div className={style.reccircle}>
-              <Image
-                className={style.stroke}
-                src="/stroke.svg"
-                width={15}
-                height={14}
-                alt="love"
-              />
-            </div> */}
         </div>
 
         <div className={style.htitle3}>New releases.</div>

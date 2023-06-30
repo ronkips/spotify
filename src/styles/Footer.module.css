@@ -218,9 +218,27 @@
   left: 700px;
   width: 16px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
   .footer {
-    display: none;
+    box-sizing: border-box;
+
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    background: rgba(29, 33, 35, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+  }
+  .footer {
+    left: 30px;
+    top: 33.79px;
+    width: 57.41px;
+    height: 57.41px;
+
+    box-shadow: 0px 17.5746px 19.9179px -11.7164px rgba(0, 0, 0, 0.61);
+    border-radius: 16.403px;
   }
 }
 @media screen and (max-width: 414px) {

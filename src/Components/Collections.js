@@ -91,17 +91,7 @@ const Collections = () => {
                 </SwiperSlide>
               );
             })}
-            {/* <div className={style.containeritems}>
-              <Image
-                className={style.containerpic}
-                src="/Rectangle 26.svg"
-                alt="music pic"
-                width={213}
-                height={234}
-              />
-              <span className={style.containertitle}>hello world</span>
-              <span className={style.containersub_title}>hello world</span>
-            </div> */}
+
           </Swiper>
         </div>
       </div>
