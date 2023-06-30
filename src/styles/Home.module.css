@@ -1,13 +1,13 @@
 .container {
-  position: relative;
-  width: 100vw;
+  position: absolute;
+  width: 1280px;
   height: 100vh;
   align-items: center;
   background: black;
 }
 .home {
   position: relative;
-  /* padding-left: 100px; */
+  overflow-y: scroll;
   width: 1280px;
   height: 100vh;
   left: 50px;
@@ -63,6 +63,7 @@
   position: fixed;
   left: 0px;
   top: 0px;
+  bottom: 0px;
   height: 100vh;
   width: 98px;
   background-color: inherit;
@@ -138,7 +139,7 @@
 }
 .hhead {
   position: absolute;
-  width: 92px;
+  width: max-content;
   height: 14px;
   left: 45px;
   top: 38px;
@@ -156,7 +157,7 @@
 }
 .hhead2 {
   position: absolute;
-  width: 167px;
+  width: max-content;
   height: 42px;
   left: 45px;
   top: 137px;
@@ -194,7 +195,7 @@
 }
 .hlikes {
   position: absolute;
-  width: 59px;
+  width: max-content;
   height: 17px;
   left: 99px;
   top: 0px;
@@ -225,7 +226,7 @@
 }
 .htitle2 {
   position: absolute;
-  width: 123px;
+  width: max-content;
   height: 29px;
   left: 800px;
   top: 96px;
@@ -487,16 +488,6 @@
   width: 20px;
   height: 20px;
 }
-/* .phot img {
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-  border: 1px solid white;
-  opacity: 0.8;
-} */
-/* .phot img:not(:nth-child(1)) {
-  margin-left: -0.6rem;
-} */
 
 @media screen and (max-width: 450px) {
   .container {
@@ -558,25 +549,7 @@
   .hcategory2 {
     display: none;
   }
-  .htitle2 {
-    width: 103px;
-    height: 24px;
-    left: 24px;
-    top: 635px;
 
-    /* Bold/20px */
-
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    /* identical to box height, or 24px */
-
-    /* light */
-
-    color: #efeee0;
-  }
   .hhead {
     width: 92px;
     height: 14px;
@@ -656,9 +629,28 @@
     height: 21.53px;
   }
   .htitle2 {
+    width: 103px;
+    height: 24px;
+    left: 24px;
+    top: 635px;
+
+    /* Bold/20px */
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    /* identical to box height, or 24px */
+
+    /* light */
+
+    color: #efeee0;
+  }
+  .htitle3 {
     width: 134px;
-    height: 30px;
-    left: 30px;
+    height: 24px;
+    left: 24px;
     top: 948px;
 
     /* Bold/20px */
@@ -675,20 +667,106 @@
     color: #efeee0;
   }
   .hcontainer3 {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    width: 323px;
+    width: 350px;
     height: 233px;
-    left: 24;
+    left: 4;
     top: 675px;
+    /* overflow-x: scroll; */
 
     /* dark-alt */
 
     background: inherit;
     border-radius: 20px;
   }
-  .rectangle17 {
+  .hmusic {
+    display: flex;
+    flex-direction: row;
+    width: 323px;
+    height: 233px;
+    left: 0px;
+    top: 0px;
+
+    /* dark-alt */
+
+    background: #1a1e1f;
+    /* background: red; */
+
+    border-radius: 20px;
   }
-  .htitle3 {
+  .htitle4 {
+    display: none;
+  }
+  .esma {
+    display: none;
+  }
+  .rectangle17 {
+    width: 108px;
+    height: 99px;
+    left: 14px;
+    top: 15px;
+
+    border-radius: 10px;
+  }
+  .rectitle {
+    width: 144px;
+    height: 20px;
+    left: 14px;
+    top: 129px;
+
+    /* Regular/17px */
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 120%;
+    /* or 20px */
+
+    color: #ffffff;
+  }
+  .recname {
+    width: 79px;
+    height: 14px;
+    left: 14px;
+    top: 155px;
+
+    /* Regular/12px */
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    /* or 14px */
+
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .rectime {
+    width: 43px;
+    height: 17px;
+    left: 14px;
+    top: 193px;
+
+    /* Regular/14px */
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    /* identical to box height, or 17px */
+
+    color: #ffffff;
+  }
+  .reccircle {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 272px;
+    top: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
   }
 }
